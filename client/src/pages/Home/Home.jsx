@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Welcome from "../../components/Welcom";
-import WorkExperience from "../../components/WorkExperience";
+import WorkExperience from "../../components/WorkExprience/WorkExperience";
 import MyProject from "../../components/MyProject";
 import Feedback from "../../components/Feedback";
 import Contactform from "../../components/Contactform";
