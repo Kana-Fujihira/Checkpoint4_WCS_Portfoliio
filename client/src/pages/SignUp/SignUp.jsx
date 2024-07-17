@@ -1,11 +1,15 @@
 import { useState } from "react";
 
+const URL = import.meta.env.VITE_API_URL;
+
 function SignUp() {
   const [values, setValues] = useState({
     name: "",
     email: "",
     password: "",
   });
+
+  //   const [errors, setErrors] = useState({});
 
   const handleInput = (event) => {
     setValues((prev) => ({
@@ -16,15 +20,42 @@ function SignUp() {
 
   console.info(values);
 
-  //   const handleSubmit = async (event) => {
-  //     event.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-  //   }
+    // const validationErrors = Validation(values);
+    // setErrors(validationErrors);
+
+    if (Object.keys.length !== 0) {
+      try {
+        const response = await fetch(`${URL}/api/users`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: values.name,
+            email: values.email,
+            password: values.password,
+          }),
+        });
+        if (!response.ok) {
+          throw new Error("Erreur lors de l'inscription");
+        }
+      } catch (err) {
+        console.error("Erreur lors de la requête d'inscription:", err);
+        console.info("Une erreur est survenue lors de l'inscription");
+      }
+    } else {
+      console.info("Veuillez corriger les erreurs dans le formulaire");
+    }
+  };
 
   return (
     <div>
-      <div>
-        <form>
+      {" "}
+      <form onSubmit={handleSubmit}>
+        <div>
           <label htmlFor="name">
             <p>Name</p>
           </label>
@@ -35,10 +66,8 @@ function SignUp() {
             value={values.name}
             onChange={handleInput}
           />
-        </form>
-      </div>
-      <div>
-        <form>
+        </div>
+        <div>
           <label htmlFor="email">
             <p>Email</p>
           </label>
@@ -49,10 +78,8 @@ function SignUp() {
             value={values.email}
             onChange={handleInput}
           />
-        </form>
-      </div>
-      <div>
-        <form>
+        </div>
+        <div>
           <label htmlFor="password">
             <p>Password</p>
           </label>
@@ -67,8 +94,8 @@ function SignUp() {
           <button type="submit">
             <p>SignUp</p>
           </button>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   );
 }
