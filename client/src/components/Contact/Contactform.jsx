@@ -9,8 +9,6 @@ function Contactform() {
     message: "",
   });
 
-  //   const [errors, setErrors] = useState({});
-
   const handleInputContact = (event) => {
     setContactValues((prev) => ({
       ...prev,
@@ -23,24 +21,24 @@ function Contactform() {
   const handleSend = async (event) => {
     event.preventDefault();
 
-    // const validationErrors = Validation(values);
-    // setErrors(validationErrors);
-
     if (Object.keys.length !== 0) {
       try {
-        const response = await fetch(`${URL}/api/contact`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: contactValues.name,
-            email: contactValues.email,
-            phonenumber: contactValues.phonenumber,
-            companyname: contactValues.companyname,
-            message: contactValues.message,
-          }),
-        });
+        const response = await fetch(
+          `${import.meta.env.VITE_API_URL}/api/contact`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: contactValues.name,
+              email: contactValues.email,
+              phonenumber: contactValues.phonenumber,
+              companyname: contactValues.companyname,
+              message: contactValues.message,
+            }),
+          }
+        );
         if (!response.ok) {
           throw new Error("Erreur lors de l'inscription");
         }
