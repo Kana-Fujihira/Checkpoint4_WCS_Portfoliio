@@ -37,7 +37,7 @@ function SignIn() {
         const responseData = await response.json();
         console.info("API response:", responseData);
 
-        if (signinInfo[0].email === "kana@kana.com") {
+        if (signinInfo.email === "kana@kana.com") {
           navigate("/admin");
           console.info(`Bienvenue`);
         } else {
