@@ -14,3 +14,11 @@ create table contact (
   message TEXT(1000) not null
 );
 
+create table project (
+  id int unsigned primary key auto_increment not null,
+  teamname varchar (55) not null,
+  projectname varchar(55) not null,
+  skill VARCHAR(255) not null,
+  projectlink VARCHAR(255) not null
+);
+

@@ -7,7 +7,6 @@ class UserSeeder extends AbstractSeeder {
   }
 
   run() {
-    // Generate fake user data
     const users = [
       {
         name: "",
