@@ -1,0 +1,10 @@
+.projectContainer {
+  display: flex;
+  outline: solid;
+  margin: 1rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
