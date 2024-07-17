@@ -47,7 +47,7 @@ const add = async (req, res, next) => {
     const insertId = await tables.project.create(project);
 
     // Respond with HTTP 201 (Created) and the ID of the newly inserted item
-    res.status(201).json({ insertId });
+    res.status(201).json(insertId);
   } catch (err) {
     // Pass any errors to the error-handling middleware
     next(err);

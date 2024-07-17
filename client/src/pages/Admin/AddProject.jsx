@@ -17,41 +17,37 @@ function AddProject() {
 
   console.info(projectValues);
 
-  const handleSubmit = async (event) => {
+  const handleAddProject = async (event) => {
     event.preventDefault();
-
-    if (Object.keys.length === 0) {
-      try {
-        const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/project`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              teamname: projectValues.teamname,
-              projectname: projectValues.projectname,
-              skill: projectValues.skill,
-              projectlink: projectValues.projectlink,
-            }),
-          }
-        );
-        if (!response.ok) {
-          throw new Error("Erreur lors de l'inscription");
+    // Simple validation: check if all fields are filled
+    const { teamname, projectname, skill, projectlink } = projectValues;
+    if (!teamname || !projectname || !skill || !projectlink) {
+      console.info("Veuillez remplir tous les champs");
+      return;
+    }
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/project`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(projectValues),
         }
-      } catch (err) {
-        console.error("Erreur lors de la requête d'inscription:", err);
-        console.info("Une erreur est survenue lors de l'inscription");
+      );
+      if (response === 200) {
+        throw new Error("Erreur lors de l'inscription");
       }
-    } else {
-      console.info("Veuillez corriger les erreurs dans le formulaire");
+    } catch (err) {
+      console.error("Erreur lors de la requête d'inscription:", err);
+      console.info("Une erreur est survenue lors de l'inscription");
     }
   };
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleAddProject}>
         <div>
           <label htmlFor="teamname">
             <p>Team name</p>
