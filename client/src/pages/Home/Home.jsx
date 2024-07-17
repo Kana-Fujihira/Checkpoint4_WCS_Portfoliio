@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import Welcome from "../../components/Welcom";
 import WorkExperience from "../../components/WorkExperience";
 import MyProject from "../../components/MyProject";

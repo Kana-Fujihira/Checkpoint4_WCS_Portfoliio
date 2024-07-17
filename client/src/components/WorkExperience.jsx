@@ -1,7 +1,7 @@
 function WorkExperience() {
   return (
     <div>
-      <p>Kana</p>
+      <p>kana</p>
     </div>
   );
 }
