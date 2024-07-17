@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-const URL = import.meta.env.VITE_API_URL;
-
 function SignUp() {
   const [values, setValues] = useState({
     name: "",
@@ -28,17 +26,20 @@ function SignUp() {
 
     if (Object.keys.length === 0) {
       try {
-        const response = await fetch(`${URL}/api/users`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: values.name,
-            email: values.email,
-            password: values.password,
-          }),
-        });
+        const response = await fetch(
+          `${import.meta.env.VITE_API_URL}/api/users`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: values.name,
+              email: values.email,
+              password: values.password,
+            }),
+          }
+        );
         if (!response.ok) {
           throw new Error("Erreur lors de l'inscription");
         }
