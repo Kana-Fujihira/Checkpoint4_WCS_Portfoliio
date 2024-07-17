@@ -18,6 +18,10 @@ const contactRouter = require("./contact/router");
 
 router.use("/contact", contactRouter);
 
+const projectRouter = require("./project/router");
+
+router.use("/project", projectRouter);
+
 /* ************************************************************************* */
 
 module.exports = router;
