@@ -7,11 +7,7 @@ const router = express.Router();
 /* ************************************************************************* */
 
 // Import  user-related actions
-const {
-  browse,
-  read,
-  add,
-} = require("../../../controllers/userActions");
+const { browse, read, add } = require("../../../controllers/userActions");
 
 // Route to get a list of  user
 router.get("/", browse);
