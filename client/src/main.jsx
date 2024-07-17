@@ -18,6 +18,15 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: async () => {
+          const response = await fetch(
+            `${import.meta.env.VITE_API_URL}/api/project`
+          );
+          if (response.status !== 200) {
+            throw new Error("Failed to fetch projects");
+          }
+          return response.json();
+        },
       },
       {
         path: "/signin",
