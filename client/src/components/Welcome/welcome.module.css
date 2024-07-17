@@ -1,0 +1,12 @@
+.welcomContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomContainer img {
+  width: 40%;
+}

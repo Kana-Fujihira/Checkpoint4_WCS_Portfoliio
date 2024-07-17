@@ -10,4 +10,10 @@
 .navbarContainer li {
   list-style: none;
   text-align: center;
+  font-weight: bold;
+}
+
+.navbarContainer a {
+  text-decoration: none;
+  color: var(--text-color-main);
 }

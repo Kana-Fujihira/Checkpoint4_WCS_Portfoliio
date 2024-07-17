@@ -1,0 +1,20 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 5%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contactContainer input {
+  margin: 1rem;
+}
+
+.contactContainer button {
+  font-family: var(--main-font);
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Average-Regular";
+  src: url("../src/assets/font/Average-Regular.ttf") format("truetype");
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+:root {
+  --background-main-color: #f1ede6;
+  --text-color-main: #ff5224;
+  --main-font: "Average-Regular";
+}
+
+body {
+  background-color: var(--background-main-color);
+  color: var(--text-color-main);
+  font-family: var(--main-font);
+}

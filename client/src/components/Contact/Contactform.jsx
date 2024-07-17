@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./contact.module.css";
 
 function Contactform() {
   const [contactValues, setContactValues] = useState({
@@ -54,7 +55,7 @@ function Contactform() {
   return (
     <div>
       {" "}
-      <form onSubmit={handleSend}>
+      <form className={styles.contactContainer} onSubmit={handleSend}>
         <div>
           <label htmlFor="name">
             <p>Name</p>
