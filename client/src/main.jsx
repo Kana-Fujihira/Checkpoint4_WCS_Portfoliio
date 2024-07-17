@@ -4,11 +4,38 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
+import Home from "./pages/Home/Home";
+import SignIn from "./pages/SignIn/SignIn";
+import SignUp from "./pages/SignUp/SignUp";
+import Admin from "./pages/Admin/Admin";
+import AddProject from "./pages/Admin/AddProject";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/signin",
+        element: <SignIn />,
+      },
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
+      {
+        path: "/admn",
+        element: <Admin />,
+      },
+      {
+        path: "/addpj",
+        element: <AddProject />,
+      },
+    ],
   },
 ]);
 
