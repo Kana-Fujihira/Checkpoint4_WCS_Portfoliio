@@ -1,0 +1,28 @@
+.workTitle {
+  text-align: center;
+}
+.workContainer {
+  display: flex;
+  outline: solid;
+  margin: 1rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.workContainer img {
+  width: 10%;
+}
+
+.workContainer p {
+  margin: 1rem;
+}
+
+.companyName {
+  font-size: 20px;
+  font-weight: bold;
+}

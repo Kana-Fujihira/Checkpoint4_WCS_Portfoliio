@@ -1,10 +1,12 @@
-.projectContainer {
+.randomAvatarContainer {
   display: flex;
-  outline: solid;
-  margin: 1rem;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+.randomAvatarContainer img {
+  width: 25%;
 }

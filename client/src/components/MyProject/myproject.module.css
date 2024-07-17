@@ -1,9 +1,10 @@
 .projectContainer {
   display: flex;
-  border: solid black;
   margin: 1rem;
+  border: solid;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-around;
   align-items: center;
+  border-radius: 5%;
 }

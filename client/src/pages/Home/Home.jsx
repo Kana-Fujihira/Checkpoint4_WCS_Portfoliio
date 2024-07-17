@@ -1,8 +1,8 @@
 import Navbar from "../../components/Navbar/Navbar";
-import Welcome from "../../components/Welcom";
-import WorkExperience from "../../components/WorkExprience/WorkExperience";
+import Welcome from "../../components/Welcome/Welcome";
+import WorkExperience from "../../components/WorkExperience/WorkExperience";
 import MyProject from "../../components/MyProject/MyProject";
-import Feedback from "../../components/Feedback";
+import Recommendation from "../../components/Recommendation/Recommendation";
 import Contactform from "../../components/Contact/Contactform";
 import Footer from "../../components/Footer";
 
@@ -10,12 +10,24 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <Welcome />
-      <WorkExperience />
-      <MyProject />
-      <Feedback />
-      <Contactform />
-      <Footer />
+      <section id="home">
+        <Welcome />
+      </section>
+      <section id="workExperience">
+        <WorkExperience />
+      </section>
+      <section id="myProject">
+        <MyProject />
+      </section>
+      <section id="Recommendation">
+        <Recommendation />
+      </section>
+      <section id="contact">
+        <Contactform />
+      </section>
+      <section>
+        <Footer />
+      </section>
     </div>
   );
 }
