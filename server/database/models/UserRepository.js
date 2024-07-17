@@ -43,19 +43,28 @@ class UserRepository extends AbstractRepository {
     return rows;
   }
 
-  // The U of CRUD - Update operation
-  // TODO: Implement the update operation to modify an existing item
+  async readByEmailWithPassword(email) {
+    const [rows] = await this.database.query(
+      `SELECT * FROM ${this.table} WHERE email = ?`,
+      [email]
+    );
 
-  // async update(item) {
-  //   ...
-  // }
+    return rows;
 
-  // The D of CRUD - Delete operation
-  // TODO: Implement the delete operation to remove an item by its ID
+    // The U of CRUD - Update operation
+    // TODO: Implement the update operation to modify an existing item
 
-  // async delete(id) {
-  //   ...
-  // }
+    // async update(item) {
+    //   ...
+    // }
+
+    // The D of CRUD - Delete operation
+    // TODO: Implement the delete operation to remove an item by its ID
+
+    // async delete(id) {
+    //   ...
+    // }
+  }
 }
 
 module.exports = UserRepository;
