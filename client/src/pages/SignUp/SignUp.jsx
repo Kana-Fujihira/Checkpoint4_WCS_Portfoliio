@@ -26,7 +26,7 @@ function SignUp() {
     // const validationErrors = Validation(values);
     // setErrors(validationErrors);
 
-    if (Object.keys.length !== 0) {
+    if (Object.keys.length === 0) {
       try {
         const response = await fetch(`${URL}/api/users`, {
           method: "POST",
