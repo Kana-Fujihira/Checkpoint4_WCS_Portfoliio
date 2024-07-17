@@ -1,0 +1,9 @@
+.projectContainer {
+  display: flex;
+  border: solid black;
+  margin: 1rem;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
