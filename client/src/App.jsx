@@ -4,14 +4,7 @@ import "./App.css";
 function App() {
   return (
     <main className="container">
-      <header>
-        <h>this is header</h>
-      </header>
-
-     <Outlet/>
-      <footer>
-<p>this is footer</p>
-      </footer>
+      <Outlet />
     </main>
   );
 }

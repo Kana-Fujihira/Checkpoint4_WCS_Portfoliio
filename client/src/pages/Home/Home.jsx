@@ -4,6 +4,7 @@ import WorkExperience from "../../components/WorkExperience";
 import MyProject from "../../components/MyProject";
 import Feedback from "../../components/Feedback";
 import Contactform from "../../components/Contactform";
+import Footer from "../../components/Footer";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <MyProject />
       <Feedback />
       <Contactform />
+      <Footer />
     </div>
   );
 }
