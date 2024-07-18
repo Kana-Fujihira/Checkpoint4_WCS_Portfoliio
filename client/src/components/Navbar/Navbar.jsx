@@ -1,23 +1,29 @@
-import { Link } from "react-router-dom";
+// import { useState, useEffect } from "react";
 import styles from "./navbar.module.css";
 
 function Navbar() {
+  // const [navbar, setNavbar] = useState();
+
+  // useEffect();
+
   return (
     <div>
       <ul className={styles.navbarContainer}>
-        <li>Home</li>
-        <Link to="#workExperience">
+        <a href="#home">
+          <li>Home</li>
+        </a>
+        <a href="#workExperience">
           <li>Work Experience</li>
-        </Link>
-        <Link to="#myProject">
+        </a>
+        <a href="#myProject">
           <li>Project</li>
-        </Link>
-        <Link to="#Reccomendation">
+        </a>
+        <a href="#Recommendation">
           <li>Reccomendation</li>
-        </Link>
-        <Link to="#contact">
+        </a>
+        <a href="#contact">
           <li>Contact</li>
-        </Link>
+        </a>
       </ul>
     </div>
   );
