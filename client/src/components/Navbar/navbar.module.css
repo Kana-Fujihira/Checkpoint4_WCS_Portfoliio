@@ -5,12 +5,28 @@
   align-content: center;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  background-color: var(--background-main-color);
+  border: solid;
+  padding: 10px;
 }
 
 .navbarContainer li {
   list-style: none;
   text-align: center;
   font-weight: bold;
+}
+
+.navbarContainer a {
+  float: left;
+  display: block;
+}
+.navbarContainer a:hover {
+  background: #ddd;
+  color: rgb(81, 81, 81);
 }
 
 .navbarContainer a {

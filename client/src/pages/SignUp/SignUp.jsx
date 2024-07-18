@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import Validation from "./signupValidation";
 import styles from "./signup.module.css";
+import Home from "../../assets/images/home.svg";
 
 function SignUp() {
   const [values, setValues] = useState({
@@ -55,58 +57,66 @@ function SignUp() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">
-            <p>Name</p>
-          </label>
-          <input
-            type="text"
-            placeholder="Your Name"
-            name="name"
-            value={values.name}
-            onChange={handleInput}
-          />
-          <p className={styles.errorsField}>
-            {errors.name !== undefined && <span>{errors.name}</span>}
-          </p>
-        </div>
-        <div>
-          <label htmlFor="email">
-            <p>Email</p>
-          </label>
-          <input
-            type="email"
-            placeholder="Your email"
-            name="email"
-            value={values.email}
-            onChange={handleInput}
-          />
-          <p className={styles.errorsField}>
-            {errors.email !== undefined && <span>{errors.email}</span>}
-          </p>
-        </div>
-        <div>
-          <label htmlFor="password">
-            <p>Password</p>
-          </label>
-          <input
-            type="password"
-            placeholder="●●●●●●"
-            name="password"
-            value={values.password}
-            onChange={handleInput}
-          />
-          <p className={styles.errorsField}>
-            {errors.password !== undefined && <span>{errors.password}</span>}
-          </p>
-          <button type="submit">
-            <p>SignUp</p>
-          </button>
-        </div>
-      </form>
-    </div>
+    <>
+      <Link to="/">
+        <img className={styles.homeIcon} src={Home} alt="Home icon" />
+      </Link>
+      <div className={styles.signupContainer}>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="name">
+              <p>Name</p>
+            </label>
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              value={values.name}
+              onChange={handleInput}
+            />
+            <p className={styles.errorsField}>
+              {errors.name !== undefined && <span>{errors.name}</span>}
+            </p>
+          </div>
+          <div>
+            <label htmlFor="email">
+              <p>Email</p>
+            </label>
+            <input
+              type="email"
+              placeholder="Your email"
+              name="email"
+              value={values.email}
+              onChange={handleInput}
+            />
+            <p className={styles.errorsField}>
+              {errors.email !== undefined && <span>{errors.email}</span>}
+            </p>
+          </div>
+          <div>
+            <label htmlFor="password">
+              <p>Password</p>
+            </label>
+            <input
+              type="password"
+              placeholder="●●●●●●"
+              name="password"
+              value={values.password}
+              onChange={handleInput}
+            />
+            <p className={styles.errorsField}>
+              {errors.password !== undefined && <span>{errors.password}</span>}
+            </p>
+            <button type="submit">
+              <p>Sign Up</p>
+            </button>
+            <Link to="/signin">
+              <p>Sign In</p>
+            </Link>
+          </div>
+        </form>
+      </div>
+    </>
   );
 }
 

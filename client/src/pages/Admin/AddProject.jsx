@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
+import styles from "./addproject.module.css";
+import Home from "../../assets/images/home.svg";
 
 function AddProject() {
   const [projectValues, setProjectValues] = useState({
@@ -47,8 +50,11 @@ function AddProject() {
 
   return (
     <div>
-      <p>Add Project</p>
-      <form onSubmit={handleAddProject}>
+      <Link to="/">
+        <img className={styles.homeIcon} src={Home} alt="Home icon" />
+      </Link>
+      <p className={styles.addProjectTitle}>Add Project</p>
+      <form className={styles.addProjectContainer} onSubmit={handleAddProject}>
         <div>
           <label htmlFor="teamname">
             <p>Team name</p>
