@@ -4,7 +4,7 @@ import WorkExperience from "../../components/WorkExperience/WorkExperience";
 import MyProject from "../../components/MyProject/MyProject";
 import Recommendation from "../../components/Recommendation/Recommendation";
 import Contactform from "../../components/Contact/Contactform";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/Footer";
 
 function Home() {
   return (
