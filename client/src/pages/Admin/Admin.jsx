@@ -1,10 +1,11 @@
 import AddProject from "./AddProject";
+import DeleteProject from "./DeleteProject";
 
 function Admin() {
   return (
     <div>
-      <p>Kana</p>
       <AddProject />
+      <DeleteProject />
     </div>
   );
 }
