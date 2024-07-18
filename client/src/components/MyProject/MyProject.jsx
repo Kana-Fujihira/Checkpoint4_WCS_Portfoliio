@@ -6,6 +6,9 @@ function MyProject() {
   console.info(allProjects);
   return (
     <div>
+      <div className={styles.myProjectTitle}>
+        <h2 className={styles.maker}>My Projects</h2>
+      </div>
       {allProjects.map((project) => (
         <div key={project.id} className={styles.projectContainer}>
           <p>My team : {project.teamname}</p>

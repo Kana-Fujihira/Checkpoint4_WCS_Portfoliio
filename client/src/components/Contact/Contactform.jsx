@@ -60,6 +60,9 @@ function Contactform() {
 
   return (
     <div>
+      <div className={styles.contactTitle}>
+        <h2 className={styles.maker}>Contact Me</h2>
+      </div>
       <form className={styles.contactContainer} onSubmit={handleSend}>
         <div>
           <label htmlFor="name">

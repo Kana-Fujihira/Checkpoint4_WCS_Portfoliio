@@ -1,6 +1,9 @@
-.workTitle {
-  text-align: center;
+.workExperienceTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .workContainer {
   display: flex;
   outline: solid;
@@ -27,8 +30,19 @@
   font-weight: bold;
 }
 
+.maker {
+  background: linear-gradient(transparent 50%, rgba(255, 153, 0, 0.5) 50%);
+  display: inline;
+}
+
 @media only screen and (min-width: 480px) {
   .workContainer {
+    border-radius: 10%;
+  }
+  .workContainer {
     flex-direction: row;
+  }
+  .workContainer img {
+    width: 5%;
   }
 }
