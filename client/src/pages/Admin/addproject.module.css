@@ -1,7 +1,3 @@
-.addProjectTitle {
-  text-align: center;
-}
-
 .addProjectContainer {
   display: flex;
   flex-direction: column;
@@ -23,11 +19,18 @@
   margin-bottom: 10%;
 }
 
-.addProjectContainer p {
-  text-decoration: none;
-  margin: 1rem;
-}
-
 .homeIcon {
   width: 10%;
+}
+
+.addProjectTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addProjectButton {
+  width: 20%;
+  margin: 1rem;
+  font-family: var(--main-font);
 }

@@ -40,16 +40,17 @@ function Delete() {
   return (
     <>
       <div className={styles.deleteTitle}>
-        <p>Delete Project</p>
+        <h2>Delete Project</h2>
       </div>
       <div className={styles.deleteprojectContainer}>
         {allProjects.map((project) => (
           <div key={project.id} className={styles.projectContainer}>
             <p>My team : {project.teamname}</p>
             <p>Project name : {project.projectname}</p>
-            <p>I used {project.skill}</p>
+            <p>Skills : {project.skill}</p>
             <a href={project.projectlink}>Github Link</a>
             <button
+              className={styles.deleteProjectButton}
               onClick={() => handleDeleteProject(project.id)}
               type="submit"
             >

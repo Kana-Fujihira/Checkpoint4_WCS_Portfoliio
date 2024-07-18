@@ -53,7 +53,9 @@ function AddProject() {
       <Link to="/">
         <img className={styles.homeIcon} src={Home} alt="Home icon" />
       </Link>
-      <p className={styles.addProjectTitle}>Add Project</p>
+      <div className={styles.addProjectTitleContainer}>
+        <h2 className={styles.addProjectTitle}>Add Project</h2>
+      </div>
       <form className={styles.addProjectContainer} onSubmit={handleAddProject}>
         <div>
           <label htmlFor="teamname">
@@ -61,7 +63,7 @@ function AddProject() {
           </label>
           <input
             type="text"
-            placeholder="RiceTrio"
+            placeholder="Takoyaki"
             name="teamname"
             value={projectValues.teamname}
             onChange={handleInputProject}
@@ -73,7 +75,7 @@ function AddProject() {
           </label>
           <input
             type="text"
-            placeholder="Prodkat"
+            placeholder="Onigiri"
             name="projectname"
             value={projectValues.projectname}
             onChange={handleInputProject}
@@ -97,13 +99,13 @@ function AddProject() {
           </label>
           <input
             type="link"
-            placeholder="github://"
+            placeholder="https://github.com/"
             name="projectlink"
             value={projectValues.projectlink}
             onChange={handleInputProject}
           />
 
-          <button type="submit">
+          <button className={styles.addProjectButton} type="submit">
             <p>Add</p>
           </button>
         </div>

@@ -20,7 +20,7 @@
 
 .deleteprojectContainer button {
   font-family: var(--main-font);
-  margin-bottom: 10%;
+  margin: 1rem;
 }
 
 .deleteprojectContainer p {
