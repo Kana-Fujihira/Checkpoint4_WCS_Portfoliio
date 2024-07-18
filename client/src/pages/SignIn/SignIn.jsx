@@ -1,5 +1,7 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
+import styles from "./signin.module.css";
+import Home from "../../assets/images/home.svg";
 
 function SignIn() {
   const [signinInfo, setSignInInfo] = useState({
@@ -55,38 +57,46 @@ function SignIn() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSignIn}>
-        <div>
-          <label htmlFor="email">
-            <p>Email</p>
-          </label>
-          <input
-            type="email"
-            placeholder="Your email"
-            name="email"
-            value={signinInfo.email}
-            onChange={handleSignInInfo}
-          />
-        </div>
-        <div>
-          <label htmlFor="password">
-            <p>Password</p>
-          </label>
-          <input
-            type="password"
-            placeholder="●●●●●●"
-            name="password"
-            value={signinInfo.password}
-            onChange={handleSignInInfo}
-          />
+    <>
+      <Link to="/">
+        <img className={styles.homeIcon} src={Home} alt="Home icon" />
+      </Link>
+      <div className={styles.signinContainer}>
+        <form onSubmit={handleSignIn}>
+          <div>
+            <label htmlFor="email">
+              <p>Email</p>
+            </label>
+            <input
+              type="email"
+              placeholder="Your email"
+              name="email"
+              value={signinInfo.email}
+              onChange={handleSignInInfo}
+            />
+          </div>
+          <div>
+            <label htmlFor="password">
+              <p>Password</p>
+            </label>
+            <input
+              type="password"
+              placeholder="●●●●●●"
+              name="password"
+              value={signinInfo.password}
+              onChange={handleSignInInfo}
+            />
 
-          <button type="submit">
-            <p>SignUp</p>
-          </button>
-        </div>
-      </form>
-    </div>
+            <button type="submit">
+              <p>SignIn</p>
+            </button>
+          </div>
+        </form>
+        <Link to="/signup">
+          <p>Signup</p>
+        </Link>
+      </div>
+    </>
   );
 }
 
