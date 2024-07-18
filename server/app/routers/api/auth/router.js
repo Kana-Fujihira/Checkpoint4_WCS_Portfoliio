@@ -8,9 +8,12 @@ const router = express.Router();
 
 // Import  user-related actions
 const { login } = require("../../../controllers/authActions");
+const { read } = require("../../../controllers/userActions");
+const { verifyToken } = require("../../../services/auth");
 
 // Route to add a new user
 router.post("/", login);
+router.get("/:id", verifyToken, read);
 
 /* ************************************************************************* */
 

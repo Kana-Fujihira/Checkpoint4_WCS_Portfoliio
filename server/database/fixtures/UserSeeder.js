@@ -11,12 +11,12 @@ class UserSeeder extends AbstractSeeder {
       {
         name: "",
         email: "",
-        password: "",
+        hashed_password: "",
       },
     ];
 
     users.forEach((user) => {
-      this.insert(user); // insert into user(name,email, password) values (?, ?,?)
+      this.insert(user); // insert into user(name,email, hashed_password) values (?, ?,?)
     });
   }
 }

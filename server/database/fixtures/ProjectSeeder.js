@@ -9,16 +9,22 @@ class ProjectSeeder extends AbstractSeeder {
   run() {
     const projects = [
       {
-        teamname: "Ricetrio",
-        projectname: "prodkat",
-        skill: "React, Mysql",
-        projectlink: `https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P3-Ricetrio`,
+        teamname: "Ewoks",
+        projectname: "Le Kaleine Quizz",
+        skill: "Figma HTML CSS JavaScript",
+        projectlink: `https://github.com/wilderLPM/P1lesEwoks`,
       },
       {
         teamname: "Holidayplanner",
-        projectname: "Find your holiday",
-        skill: "React",
+        projectname: "Find Your Holiday",
+        skill: "Figma Trello React JavaScript",
         projectlink: `https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P2-holidays_planner`,
+      },
+      {
+        teamname: "Ricetrio",
+        projectname: "Prodkat",
+        skill: "Figma Trello React Mysql",
+        projectlink: `https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P3-Ricetrio`,
       },
     ];
 
