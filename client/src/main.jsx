@@ -41,6 +41,7 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <Admin />,
+        loader: fetchProject,
       },
       {
         path: "/addproject",

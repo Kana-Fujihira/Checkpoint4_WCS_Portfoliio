@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ValidationContact from "./contactValidation";
 import styles from "./contact.module.css";
 
 function Contactform() {
@@ -9,6 +10,8 @@ function Contactform() {
     companyname: "",
     message: "",
   });
+
+  const [errorsContact, setErrorsContact] = useState({});
 
   const handleInputContact = (event) => {
     setContactValues((prev) => ({
@@ -21,6 +24,9 @@ function Contactform() {
 
   const handleSend = async (event) => {
     event.preventDefault();
+
+    const validationErrors = ValidationContact(contactValues);
+    setErrorsContact(validationErrors);
 
     if (Object.keys.length !== 0) {
       try {
@@ -54,7 +60,6 @@ function Contactform() {
 
   return (
     <div>
-      {" "}
       <form className={styles.contactContainer} onSubmit={handleSend}>
         <div>
           <label htmlFor="name">
@@ -67,6 +72,11 @@ function Contactform() {
             value={contactValues.name}
             onChange={handleInputContact}
           />
+          <p className={styles.errorsField}>
+            {errorsContact.name !== undefined && (
+              <span>{errorsContact.name}</span>
+            )}
+          </p>
         </div>
         <div>
           <label htmlFor="email">
@@ -79,18 +89,28 @@ function Contactform() {
             value={contactValues.email}
             onChange={handleInputContact}
           />
+          <p className={styles.errorsField}>
+            {errorsContact.email !== undefined && (
+              <span>{errorsContact.email}</span>
+            )}
+          </p>
         </div>
         <div>
           <label htmlFor="number">
             <p>Phone number</p>
           </label>
           <input
-            type="number"
+            type="tel"
             placeholder="09074286987"
             name="number"
             value={contactValues.number}
             onChange={handleInputContact}
           />
+          <p className={styles.errorsField}>
+            {errorsContact.number !== undefined && (
+              <span>{errorsContact.number}</span>
+            )}
+          </p>
         </div>
         <div>
           <label htmlFor="name">
@@ -103,6 +123,11 @@ function Contactform() {
             value={contactValues.companyname}
             onChange={handleInputContact}
           />
+          <p className={styles.errorsField}>
+            {errorsContact.companyname !== undefined && (
+              <span>{errorsContact.companyname}</span>
+            )}
+          </p>
         </div>
         <div>
           <label htmlFor="message">
@@ -112,9 +137,15 @@ function Contactform() {
             type="text"
             placeholder="Your message"
             name="message"
+            size="50"
             value={contactValues.message}
             onChange={handleInputContact}
           />
+          <p className={styles.errorsField}>
+            {errorsContact.message !== undefined && (
+              <span>{errorsContact.message}</span>
+            )}
+          </p>
         </div>
         <button type="submit">
           <p>Send</p>
