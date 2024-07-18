@@ -7,7 +7,9 @@ import styles from "./workexperience.module.css";
 function WorkExperience() {
   return (
     <div>
-      <h2 className={styles.workTitle}>My Work Experiences</h2>
+      <div className={styles.workExperienceTitle}>
+        <h2 className={styles.maker}>My Work Experiences</h2>
+      </div>
       <section className={styles.workContainer}>
         <img src={Cheese} alt="Cheese icon" />
         <p className={styles.companyName}>OrderCheeese</p>
