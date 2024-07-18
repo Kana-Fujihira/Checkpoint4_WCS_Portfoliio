@@ -39,10 +39,10 @@ function Delete() {
 
   return (
     <>
-      <div>
+      <div className={styles.deleteTitle}>
         <p>Delete Project</p>
       </div>
-      <div>
+      <div className={styles.deleteprojectContainer}>
         {allProjects.map((project) => (
           <div key={project.id} className={styles.projectContainer}>
             <p>My team : {project.teamname}</p>
