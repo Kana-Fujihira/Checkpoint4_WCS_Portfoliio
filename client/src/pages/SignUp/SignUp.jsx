@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Validation from "./signupValidation";
+import styles from "./signup.module.css";
 
 function SignUp() {
   const [values, setValues] = useState({
@@ -7,7 +9,7 @@ function SignUp() {
     password: "",
   });
 
-  //   const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState({});
 
   const handleInput = (event) => {
     setValues((prev) => ({
@@ -21,10 +23,10 @@ function SignUp() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // const validationErrors = Validation(values);
-    // setErrors(validationErrors);
+    const validationErrors = Validation(values);
+    setErrors(validationErrors);
 
-    if (Object.keys.length === 0) {
+    if (Object.keys(validationErrors).length === 0) {
       try {
         const response = await fetch(
           `${import.meta.env.VITE_API_URL}/api/users`,
@@ -40,7 +42,7 @@ function SignUp() {
             }),
           }
         );
-        if (!response.ok) {
+        if (response.status !== 200) {
           throw new Error("Erreur lors de l'inscription");
         }
       } catch (err) {
@@ -54,7 +56,6 @@ function SignUp() {
 
   return (
     <div>
-      {" "}
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">
@@ -67,6 +68,9 @@ function SignUp() {
             value={values.name}
             onChange={handleInput}
           />
+          <p className={styles.errorsField}>
+            {errors.name !== undefined && <span>{errors.name}</span>}
+          </p>
         </div>
         <div>
           <label htmlFor="email">
@@ -79,6 +83,9 @@ function SignUp() {
             value={values.email}
             onChange={handleInput}
           />
+          <p className={styles.errorsField}>
+            {errors.email !== undefined && <span>{errors.email}</span>}
+          </p>
         </div>
         <div>
           <label htmlFor="password">
@@ -91,7 +98,9 @@ function SignUp() {
             value={values.password}
             onChange={handleInput}
           />
-
+          <p className={styles.errorsField}>
+            {errors.password !== undefined && <span>{errors.password}</span>}
+          </p>
           <button type="submit">
             <p>SignUp</p>
           </button>
