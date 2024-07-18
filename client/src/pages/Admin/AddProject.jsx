@@ -47,6 +47,7 @@ function AddProject() {
 
   return (
     <div>
+      <p>Add Project</p>
       <form onSubmit={handleAddProject}>
         <div>
           <label htmlFor="teamname">

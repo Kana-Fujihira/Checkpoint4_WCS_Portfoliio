@@ -9,6 +9,16 @@ import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
 import Admin from "./pages/Admin/Admin";
 import AddProject from "./pages/Admin/AddProject";
+import DeleteProject from "./pages/Admin/DeleteProject";
+
+const fetchProject = async () => {
+  const response = await fetch(`${import.meta.env.VITE_API_URL}/api/project`);
+  if (response.status !== 200) {
+    throw new Error("Failed to fetch projects");
+  }
+  const data = await response.json();
+  return data;
+};
 
 const router = createBrowserRouter([
   {
@@ -18,15 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: async () => {
-          const response = await fetch(
-            `${import.meta.env.VITE_API_URL}/api/project`
-          );
-          if (response.status !== 200) {
-            throw new Error("Failed to fetch projects");
-          }
-          return response.json();
-        },
+        loader: fetchProject,
       },
       {
         path: "/signin",
@@ -43,6 +45,11 @@ const router = createBrowserRouter([
       {
         path: "/addproject",
         element: <AddProject />,
+      },
+      {
+        path: "/deleteproject",
+        element: <DeleteProject />,
+        loader: fetchProject,
       },
     ],
   },

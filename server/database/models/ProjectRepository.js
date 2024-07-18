@@ -56,11 +56,15 @@ class ProjecRepository extends AbstractRepository {
   // }
 
   // The D of CRUD - Delete operation
-  // TODO: Implement the delete operation to remove an project by its ID
 
-  // async delete(id) {
-  //   ...
-  // }
+  async delete(id) {
+    const [result] = await this.database.query(
+      `delete from ${this.table} where id = ?`,
+      [id]
+    );
+
+    return result;
+  }
 }
 
 module.exports = ProjecRepository;
