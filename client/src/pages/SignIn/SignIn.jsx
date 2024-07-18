@@ -41,7 +41,7 @@ function SignIn() {
 
         if (signinInfo.email === "kana@kana.com") {
           navigate("/admin");
-          console.info(`Bienvenue`);
+          console.info(`Bienvenue Admin`);
         } else {
           navigate("/");
           console.info(`Bienvenue`);

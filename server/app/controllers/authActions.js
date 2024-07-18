@@ -20,6 +20,7 @@ const login = async (req, res, next) => {
       return;
     }
 
+    console.info(user[0].hashed_password);
     console.info(user[0].password);
     console.info(user[0].email);
     console.info(req.body.password);
@@ -32,9 +33,13 @@ const login = async (req, res, next) => {
     // Compare the provided password with the stored password (assuming plain text for simplicity)
     if (verified === true) {
       delete user[0].hashed_password;
-      const token = await jwt.sign({ sub: user.id }, process.env.APP_SECRET, {
-        expiresIn: "1h",
-      });
+      const token = await jwt.sign(
+        { sub: user.id, isAdmin: user.is_admin },
+        process.env.APP_SECRET,
+        {
+          expiresIn: "1h",
+        }
+      );
       res.cookie("access_token", token, {
         httpOnly: true,
         maxAge: 3600000,
