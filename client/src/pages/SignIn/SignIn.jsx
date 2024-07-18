@@ -2,12 +2,15 @@ import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 import styles from "./signin.module.css";
 import Home from "../../assets/images/home.svg";
+import { useUserContext } from "../../context/UserContext";
 
 function SignIn() {
   const [signinInfo, setSignInInfo] = useState({
     email: "",
     password: "",
   });
+
+  const { login } = useUserContext();
 
   const navigate = useNavigate();
 
@@ -40,6 +43,7 @@ function SignIn() {
         console.info("API response:", responseData);
 
         if (signinInfo.email === "kana@kana.com") {
+          login(responseData.user);
           navigate("/admin");
           console.info(`Bienvenue Admin`);
         } else {

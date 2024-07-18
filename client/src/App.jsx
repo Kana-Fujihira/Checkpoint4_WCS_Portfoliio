@@ -1,11 +1,14 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
+import UserProvider from "./context/UserContext";
 
 function App() {
   return (
-    <main className="container">
-      <Outlet />
-    </main>
+    <UserProvider>
+      <main className="container">
+        <Outlet />
+      </main>
+    </UserProvider>
   );
 }
 
