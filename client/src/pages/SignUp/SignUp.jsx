@@ -48,7 +48,7 @@ function SignUp() {
             }),
           }
         );
-        if (response.status !== 200) {
+        if (response.status < 200 || response.status >= 300) {
           throw new Error("Error during registration");
         }
         const data = await response.json();
