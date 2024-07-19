@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ValidationContact from "./contactValidation";
 import styles from "./contact.module.css";
 
@@ -10,6 +11,7 @@ function Contactform() {
     companyname: "",
     message: "",
   });
+  const navigate = useNavigate();
 
   const [errorsContact, setErrorsContact] = useState({});
 
@@ -28,33 +30,33 @@ function Contactform() {
     const validationErrors = ValidationContact(contactValues);
     setErrorsContact(validationErrors);
 
-    if (Object.keys.length !== 0) {
-      try {
-        const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/contact`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              name: contactValues.name,
-              email: contactValues.email,
-              phonenumber: contactValues.phonenumber,
-              companyname: contactValues.companyname,
-              message: contactValues.message,
-            }),
-          }
-        );
-        if (!response.ok) {
-          throw new Error("Erreur lors de l'inscription");
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/contact`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: contactValues.name,
+            email: contactValues.email,
+            phonenumber: contactValues.phonenumber,
+            companyname: contactValues.companyname,
+            message: contactValues.message,
+          }),
         }
-      } catch (err) {
-        console.error("Erreur lors de la requête d'inscription:", err);
-        console.info("Une erreur est survenue lors de l'inscription");
+      );
+      if (!response.ok) {
+        throw new Error("Erreur lors de l'inscription");
       }
-    } else {
-      console.info("Veuillez corriger les erreurs dans le formulaire");
+
+      const data = await response.json();
+      navigate("/validation");
+      console.info("Request successful:", data);
+    } catch (err) {
+      console.error("Erreur lors de la requête d'inscription:", err);
+      console.info("Une erreur est survenue lors de l'inscription");
     }
   };
 

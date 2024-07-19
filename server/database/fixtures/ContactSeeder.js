@@ -9,11 +9,11 @@ class UserSeeder extends AbstractSeeder {
   run() {
     const contacts = [
       {
-        name: "kana",
-        email: "kana@kana.com",
-        phonenumber: "09074286987",
-        companyname: "kana",
-        message: "kana",
+        name: "",
+        email: "",
+        phonenumber: "",
+        companyname: "",
+        message: "",
       },
     ];
 
