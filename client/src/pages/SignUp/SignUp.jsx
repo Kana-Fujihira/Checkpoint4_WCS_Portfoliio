@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Validation from "./signupValidation";
 import styles from "./signup.module.css";
@@ -10,6 +11,9 @@ function SignUp() {
     email: "",
     password: "",
   });
+  const notifySuccess = (text) => toast.success(text);
+  const notifyError = (text) => toast.error(text);
+  const navigate = useNavigate();
 
   const [errors, setErrors] = useState({});
 
@@ -45,14 +49,16 @@ function SignUp() {
           }
         );
         if (response.status !== 200) {
-          throw new Error("Erreur lors de l'inscription");
+          throw new Error("Error during registration");
         }
+        const data = await response.json();
+        navigate("/signin");
+        notifySuccess("Request successful:", data);
       } catch (err) {
-        console.error("Erreur lors de la requête d'inscription:", err);
-        console.info("Une erreur est survenue lors de l'inscription");
+        notifyError("Error when requesting registration", err);
       }
     } else {
-      console.info("Veuillez corriger les erreurs dans le formulaire");
+      notifyError("Please correct any errors in the form");
     }
   };
 

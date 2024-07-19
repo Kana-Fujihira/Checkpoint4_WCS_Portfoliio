@@ -8,7 +8,7 @@ function WorkExperience() {
   return (
     <div>
       <div className={styles.workExperienceTitle}>
-        <h2 className={styles.maker}>My Work Experiences</h2>
+        <h2 className={styles.maker}>Work Experiences</h2>
       </div>
       <section className={styles.workContainer}>
         <img src={Cheese} alt="Cheese icon" />
