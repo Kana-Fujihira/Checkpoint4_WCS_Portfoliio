@@ -8,8 +8,7 @@ import Home from "./pages/Home/Home";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
 import Admin from "./pages/Admin/Admin";
-import AddProject from "./pages/Admin/AddProject";
-import DeleteProject from "./pages/Admin/DeleteProject";
+import Validation from "./pages/Validation/Validation";
 
 const fetchProject = async () => {
   const response = await fetch(`${import.meta.env.VITE_API_URL}/api/project`);
@@ -44,13 +43,8 @@ const router = createBrowserRouter([
         loader: fetchProject,
       },
       {
-        path: "/addproject",
-        element: <AddProject />,
-      },
-      {
-        path: "/deleteproject",
-        element: <DeleteProject />,
-        loader: fetchProject,
+        path: "/validation",
+        element: <Validation />,
       },
     ],
   },
