@@ -48,15 +48,15 @@ function Contactform() {
         }
       );
       if (!response.ok) {
-        throw new Error("Erreur lors de l'inscription");
+        throw new Error("Error during registration");
       }
 
       const data = await response.json();
       navigate("/validation");
       console.info("Request successful:", data);
     } catch (err) {
-      console.error("Erreur lors de la requête d'inscription:", err);
-      console.info("Une erreur est survenue lors de l'inscription");
+      console.error("Error during contact:", err);
+      console.info("Error has occurred during connection");
     }
   };
 

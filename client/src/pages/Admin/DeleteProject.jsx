@@ -40,7 +40,7 @@ function Delete() {
   return (
     <>
       <div className={styles.deleteTitle}>
-        <h2>Delete Project</h2>
+        <h2 className={styles.maker}>Delete Project</h2>
       </div>
       <div className={styles.deleteprojectContainer}>
         {allProjects.map((project) => (

@@ -54,7 +54,7 @@ function AddProject() {
         <img className={styles.homeIcon} src={Home} alt="Home icon" />
       </Link>
       <div className={styles.addProjectTitleContainer}>
-        <h2 className={styles.addProjectTitle}>Add Project</h2>
+        <h2 className={styles.maker}>Add Project</h2>
       </div>
       <form className={styles.addProjectContainer} onSubmit={handleAddProject}>
         <div>

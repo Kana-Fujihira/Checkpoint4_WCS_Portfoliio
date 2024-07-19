@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
 .workContainer img {
@@ -37,7 +37,7 @@
 
 @media only screen and (min-width: 480px) {
   .workContainer {
-    border-radius: 10%;
+    border-radius: 10px;
   }
   .workContainer {
     flex-direction: row;

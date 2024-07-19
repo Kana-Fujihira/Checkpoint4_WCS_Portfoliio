@@ -11,7 +11,7 @@ function Recommendation() {
         <h2 className={styles.maker}>Reviews from previous work</h2>
       </div>
       <section className={styles.randomAvatarContainer}>
-        <h2>" Flexibility "</h2>
+        <h2>" More croissant "</h2>
         <img src={Woman} alt="Random Avatar 1" />
         <h3>Kim nygn nygn</h3>
         <p>

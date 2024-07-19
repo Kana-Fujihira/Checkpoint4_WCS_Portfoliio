@@ -1,5 +1,6 @@
 .deleteTitle {
   text-align: center;
+  margin: 1rem;
 }
 
 .deleteprojectContainer {
@@ -30,4 +31,15 @@
 
 .homeIcon {
   width: 10%;
+}
+
+.maker {
+  background: linear-gradient(transparent 50%, rgba(255, 153, 0, 0.5) 50%);
+  display: inline;
+}
+
+@media only screen and (min-width: 480px) {
+  .deleteprojectContainer {
+    flex-direction: row;
+  }
 }

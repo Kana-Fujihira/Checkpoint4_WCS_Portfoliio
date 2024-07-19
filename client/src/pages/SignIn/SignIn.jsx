@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 import styles from "./signin.module.css";
@@ -10,6 +11,8 @@ function SignIn() {
     password: "",
   });
 
+  const notifySuccess = (text) => toast.success(text);
+  const notifyError = (text) => toast.error(text);
   const { login } = useUserContext();
 
   const navigate = useNavigate();
@@ -45,18 +48,17 @@ function SignIn() {
         if (signinInfo.email === "kana@kana.com") {
           login(responseData.user);
           navigate("/admin");
-          console.info(`Bienvenue Admin`);
+          notifySuccess(`Welcome Admin`);
         } else {
           navigate("/");
-          console.info(`Bienvenue`);
+          notifySuccess(`Welcom Visitor`);
         }
       } else {
-        console.info("Login failed with status:", response.status);
-        console.info("Identifiants invalides");
+        notifyError("Login failed with status:", response.status);
       }
     } catch (error) {
       console.error("Error during login:", error);
-      console.info("Une erreur est survenue lors de la connexion");
+      notifyError("Error has occurred during connection");
     }
   };
 

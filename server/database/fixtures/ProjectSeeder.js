@@ -21,6 +21,12 @@ class ProjectSeeder extends AbstractSeeder {
         projectlink: `https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P2-holidays_planner`,
       },
       {
+        teamname: "Personal Project",
+        projectname: "Easy Morning Routine",
+        skill: "Figma HTML CSS JavaScript React",
+        projectlink: `https://github.com/Kana-Fujihira/Morning-Routine-React-App`,
+      },
+      {
         teamname: "Ricetrio",
         projectname: "Prodkat",
         skill: "Figma Trello React Mysql",
