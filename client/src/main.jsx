@@ -9,6 +9,7 @@ import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
 import Admin from "./pages/Admin/Admin";
 import Validation from "./pages/Validation/Validation";
+import "./i18n";
 
 const fetchProject = async () => {
   const response = await fetch(`${import.meta.env.VITE_API_URL}/api/project`);

@@ -1,28 +1,34 @@
 // import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import styles from "./navbar.module.css";
+import Languageselector from "./language-selector";
 
 function Navbar() {
   // const [navbar, setNavbar] = useState();
 
   // useEffect();
+  const { t } = useTranslation();
 
   return (
     <ul className={styles.navbarContainer}>
       <a href="#home">
-        <li>Home</li>
+        <li>{t("home")}</li>
       </a>
       <a href="#workExperience">
-        <li>Work Experience</li>
+        <li>{t("WorkExperience")}</li>
       </a>
       <a href="#myProject">
-        <li>Project</li>
+        <li>{t("Project")}</li>
       </a>
       <a href="#Recommendation">
-        <li>Reccomendation</li>
+        <li>{t("Reccomendation")}</li>
       </a>
       <a href="#contact">
-        <li>Contact</li>
+        <li>{t("Contact")}</li>
       </a>
+      <li>
+        <Languageselector />
+      </li>
     </ul>
   );
 }
