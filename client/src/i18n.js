@@ -29,7 +29,10 @@ i18next
             " ▶2021-2023 @Paris/Lyon" +
             "▶Account Manager" +
             "▶Managing BtB French/European account at French-Japanese Sake StartUp",
-          titleReview: "Reviews from previous colleagues ",
+            MyTeam: "My team",
+            ProjectName: "Project Name",
+            Skill: "I used",
+            titleReview: "Reviews from previous colleagues ",
           title1stReview: "Organised and creativity",
           name1stReview: "Shino Account Manager from Beacon Communication",
           message1stReview:
@@ -47,6 +50,7 @@ i18next
           PhoneNumber: "PhoneNumber",
           CompanyName: "Companyname",
           YourMessage: "Your Message",
+          Send: "Send",
         },
       },
       fr: {
@@ -69,6 +73,9 @@ i18next
             " ▶2021-2023 @Paris/Lyon" +
             "▶Responsable grands comptes" +
             "▶Gestion du compte BtB français/européen de l'entreprise franco-japonaise Sake StartUp",
+          MyTeam: "Nom de équipe",
+          ProjectName: "Nom de projet",
+          Skill: "J'ai utilisé",
           titleReview: "Témoignages de collègues précédents",
           title1stReview: "Organisation et créativité",
           name1stReview: "Shino de Account Manager de Beacon Communication",
@@ -87,6 +94,7 @@ i18next
           PhoneNumber: "Numéro de téléphone",
           CompanyName: "Nom de l'entreprise",
           YourMessage: "Votre message",
+          Send: "Envoyer",
         },
       },
     },

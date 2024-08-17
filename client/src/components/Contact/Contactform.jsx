@@ -156,7 +156,7 @@ function Contactform() {
           </p>
         </div>
         <button type="submit">
-          <p>Send</p>
+          <p>{t("Send")}</p>
         </button>
       </form>
     </div>

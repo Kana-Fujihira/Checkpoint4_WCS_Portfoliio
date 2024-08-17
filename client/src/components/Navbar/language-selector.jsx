@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import styles from "./navbar.module.css";
 
 const languages = [
   { code: "fr", lang: "FR" },
@@ -14,7 +15,7 @@ function Languageselector() {
     <div>
       {languages.map((lng) => (
         <button
-          className={lng.code === i18n.language ? "selected" : ""}
+          className={styles.languageButton}
           type="submit"
           key={lng.code}
           onClick={() => changeLanguage(lng.code)}

@@ -13,9 +13,15 @@ function MyProject() {
       </div>
       {allProjects.map((project) => (
         <div key={project.id} className={styles.projectContainer}>
-          <p>My team : {project.teamname}</p>
-          <p>Project name : {project.projectname}</p>
-          <p>I used {project.skill}</p>
+          <p>
+            {t("MyTeam")} {project.teamname}
+          </p>
+          <p>
+            {t("ProjectName")} : {project.projectname}
+          </p>
+          <p>
+            {t("Skill")} {project.skill}
+          </p>
           <a href={project.projectlink}>Github Link</a>
         </div>
       ))}
