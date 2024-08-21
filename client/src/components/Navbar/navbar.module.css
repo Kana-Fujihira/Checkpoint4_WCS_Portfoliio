@@ -33,3 +33,16 @@
   text-decoration: none;
   color: var(--text-color-main);
 }
+
+button.languageButton {
+  margin: 10px;
+  font-family: var(--main-font);
+  border: 1px solid var(--text-color-main);
+  border-radius: 5px;
+  color: var(--text-color-main);
+  font-family: var(--main-font);
+}
+
+button.languageButton:hover {
+  background-color: rgb(204, 199, 199);
+}

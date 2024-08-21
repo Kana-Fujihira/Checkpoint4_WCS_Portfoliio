@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ValidationContact from "./contactValidation";
 import styles from "./contact.module.css";
 
 function Contactform() {
+  const { t } = useTranslation();
+
   const [contactValues, setContactValues] = useState({
     name: "",
     email: "",
@@ -63,16 +66,16 @@ function Contactform() {
   return (
     <div>
       <div className={styles.contactTitle}>
-        <h2 className={styles.maker}>Contact Me</h2>
+        <h2 className={styles.maker}>{t("Contact")}</h2>
       </div>
       <form className={styles.contactContainer} onSubmit={handleSend}>
         <div>
           <label htmlFor="name">
-            <p>Name</p>
+            <p>{t("Name")}</p>
           </label>
           <input
             type="text"
-            placeholder="Your Name"
+            placeholder="Kana PEDRINIS"
             name="name"
             value={contactValues.name}
             onChange={handleInputContact}
@@ -85,11 +88,11 @@ function Contactform() {
         </div>
         <div>
           <label htmlFor="email">
-            <p>Email</p>
+            <p>{t("Email")}</p>
           </label>
           <input
             type="email"
-            placeholder="Your email"
+            placeholder="kana@kana.com"
             name="email"
             value={contactValues.email}
             onChange={handleInputContact}
@@ -102,7 +105,7 @@ function Contactform() {
         </div>
         <div>
           <label htmlFor="number">
-            <p>Phone number</p>
+            <p>{t("PhoneNumber")}</p>
           </label>
           <input
             type="tel"
@@ -119,11 +122,11 @@ function Contactform() {
         </div>
         <div>
           <label htmlFor="name">
-            <p>Company name</p>
+            <p>{t("CompanyName")}</p>
           </label>
           <input
             type="companyname"
-            placeholder="WAKAZE FRANCE"
+            placeholder="Kana.co.ltd"
             name="companyname"
             value={contactValues.companyname}
             onChange={handleInputContact}
@@ -136,11 +139,11 @@ function Contactform() {
         </div>
         <div>
           <label htmlFor="message">
-            <p>Your message</p>
+            <p>{t("YourMessage")}</p>
           </label>
           <input
             type="text"
-            placeholder="Your message"
+            placeholder="Request an online meeting"
             name="message"
             size="50"
             value={contactValues.message}
@@ -153,7 +156,7 @@ function Contactform() {
           </p>
         </div>
         <button type="submit">
-          <p>Send</p>
+          <p>{t("Send")}</p>
         </button>
       </form>
     </div>
