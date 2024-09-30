@@ -33,6 +33,13 @@ class ProjectSeeder extends AbstractSeeder {
           "Figma Trello HTML CSS JavaScript React Express Node Mysql JWT Argon2",
         projectlink: `https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P3-Ricetrio`,
       },
+      {
+        teamname: "Personal Project",
+        projectname: "Catinder",
+        skill:
+          "Figma Trello HTML CSS JavaScript React Express Node Mysql Argon2",
+        projectlink: `https://github.com/Kana-Fujihira/matching-react-app`,
+      },
     ];
 
     projects.forEach((project) => {
