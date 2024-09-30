@@ -9,7 +9,7 @@ function MyProject() {
   return (
     <div>
       <div className={styles.myProjectTitle}>
-        <h2 className={styles.maker}>{t("Project")}</h2>
+        <h1 className={styles.maker}>{t("Project")}</h1>
       </div>
       {allProjects.map((project) => (
         <div key={project.id} className={styles.projectContainer}>

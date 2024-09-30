@@ -2,10 +2,21 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ValidationContact from "./contactValidation";
+import CatKaeruCall from "../../assets/images/catkaerucall.svg";
+import CatKaeruCall2 from "../../assets/images/catkaerucall2.svg";
 import styles from "./contact.module.css";
 
 function Contactform() {
   const { t } = useTranslation();
+
+  const [avatar, setAvatar] = useState(false);
+
+  const handleMouseEnter = () => {
+    setAvatar(true);
+  };
+  const handleMouthLeavve = () => {
+    setAvatar(false);
+  };
 
   const [contactValues, setContactValues] = useState({
     name: "",
@@ -66,16 +77,25 @@ function Contactform() {
   return (
     <div>
       <div className={styles.contactTitle}>
-        <h2 className={styles.maker}>{t("Contact")}</h2>
+        <h1 className={styles.maker}>{t("Contact")}</h1>{" "}
+        <img
+          src={avatar ? CatKaeruCall : CatKaeruCall2}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouthLeavve}
+          alt="CatAndFrogCallImage"
+          className={styles.contactImage}
+        />
       </div>
+
       <form className={styles.contactContainer} onSubmit={handleSend}>
         <div>
-          <label htmlFor="name">
+          <label htmlFor="nameInput">
             <p>{t("Name")}</p>
           </label>
           <input
             type="text"
             placeholder="Kana PEDRINIS"
+            id="nameInput"
             name="name"
             value={contactValues.name}
             onChange={handleInputContact}
@@ -87,12 +107,13 @@ function Contactform() {
           </p>
         </div>
         <div>
-          <label htmlFor="email">
+          <label htmlFor="emailInput">
             <p>{t("Email")}</p>
           </label>
           <input
             type="email"
-            placeholder="kana@kana.com"
+            placeholder="hello@cat.com"
+            id="emailInput"
             name="email"
             value={contactValues.email}
             onChange={handleInputContact}
@@ -104,14 +125,15 @@ function Contactform() {
           </p>
         </div>
         <div>
-          <label htmlFor="number">
+          <label htmlFor="numberInput">
             <p>{t("PhoneNumber")}</p>
           </label>
           <input
             type="tel"
-            placeholder="09074286987"
-            name="number"
-            value={contactValues.number}
+            placeholder="06XXXXXXXX"
+            id="numberInput"
+            name="phonenumber"
+            value={contactValues.phonenumber}
             onChange={handleInputContact}
           />
           <p className={styles.errorsField}>
@@ -121,12 +143,13 @@ function Contactform() {
           </p>
         </div>
         <div>
-          <label htmlFor="name">
+          <label htmlFor="compnayNameInput">
             <p>{t("CompanyName")}</p>
           </label>
           <input
-            type="companyname"
+            type="text"
             placeholder="Kana.co.ltd"
+            id="companyNameInput"
             name="companyname"
             value={contactValues.companyname}
             onChange={handleInputContact}
@@ -138,12 +161,13 @@ function Contactform() {
           </p>
         </div>
         <div>
-          <label htmlFor="message">
+          <label htmlFor="messageInput">
             <p>{t("YourMessage")}</p>
           </label>
           <input
             type="text"
             placeholder="Request an online meeting"
+            id="messageInput"
             name="message"
             size="50"
             value={contactValues.message}

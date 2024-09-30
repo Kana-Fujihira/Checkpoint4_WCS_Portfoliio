@@ -1,6 +1,6 @@
 .welcomContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
@@ -8,11 +8,19 @@
 }
 
 .welcomContainer img {
-  margin-top: 2rem;
+  margin-top: 3rem;
   width: 40%;
 }
 
 @media only screen and (min-width: 480px) {
+  .welcomContainer {
+    flex-direction: row;
+  }
+
+  .welcomContainer p {
+    font-size: 40px;
+  }
+
   .welcomContainer img {
     width: 25%;
   }

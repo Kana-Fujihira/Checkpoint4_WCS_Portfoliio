@@ -21,7 +21,7 @@ function Welcome() {
 
   return (
     <div className={styles.welcomContainer}>
-      <h1>{t("greeting")}</h1>
+      <p>{t("greeting")}</p>
       <img
         src={avatar ? AvatarMouthOpen : AvatarNormal}
         onMouseEnter={handleMouseEnter}

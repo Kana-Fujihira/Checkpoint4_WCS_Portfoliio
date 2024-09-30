@@ -16,7 +16,7 @@ i18next
           Project: "My Projects",
           Reccomendation: "Reccomendation",
           Contact: "Contact",
-          greeting: "Hello,Welcome to my portfolio !",
+          greeting: "Hello, I am Kana. Welcome to my portfolio !",
           OrderCheese:
             " ▶2017-2018 Tokyo" +
             "▶Account Executive" +
@@ -33,15 +33,15 @@ i18next
           ProjectName: "Project Name",
           Skill: "Technologies used ",
           titleReview: "Reviews from previous colleagues ",
-          title1stReview: "Organised and creativity",
+          title1stReview: "《　Organised and creativity　》",
           name1stReview: "Shino Account Manager from Beacon Communication",
           message1stReview:
             "Kana's organizational skills and creativity are outstanding. She consistently delivers innovative solutions while keeping projects well-structured and on track.",
-          title2ndReview: "Communication and team sprit",
+          title2ndReview: "《　Communication and team sprit　》",
           name2ndReview: "Takuma CEO from WAKAZE FRANCE",
           message2ndReview:
             "Kana excels in communication and fosters a strong team spirit. His ability to collaborate effectively and motivate others is truly impressive.",
-          title3rdReview: "Organised and creativity",
+          title3rdReview: "《　Organised and creativity　》",
           name3rdReview: "Alexandre IT Consultant from Exalt",
           message3rdReview:
             "Kana's patience and attention to detail are remarkable. She meticulously reviews every aspect of her work, ensuring the highest quality output.",
@@ -60,7 +60,7 @@ i18next
           Project: "Mes Projets",
           Reccomendation: "Recommandation",
           Contact: "Contactez moi",
-          greeting: "Bonjour, Bienvenue sur mon site !",
+          greeting: "Bonjour, Je suis Kana. Bienvenue sur mon site !",
           OrderCheese:
             " ▶2017-2018 Tokyo" +
             "▶Responsabe de client" +
@@ -77,15 +77,15 @@ i18next
           ProjectName: "Nom de projet",
           Skill: "Technologies utilisées ",
           titleReview: "Témoignages de collègues précédents",
-          title1stReview: "Organisation et créativité",
+          title1stReview: "《　Organisation et créativité　》",
           name1stReview: "Shino de Account Manager de Beacon Communication",
           message1stReview:
             "L'organisation et la créativité de Sarah sont exceptionnelles. Elle propose constamment des solutions innovantes tout en maintenant les projets bien structurés et dans les délais.",
-          title2ndReview: "Communication et esprit d'équipe",
+          title2ndReview: "《　Communication et esprit d'équipe　》",
           name2ndReview: "Takuma CEO de WAKAZE FRANCE",
           message2ndReview:
             "Kana excelle en communication et favorise un fort esprit d'équipe. Sa capacité à collaborer efficacement et à motiver les autres est vraiment impressionnante.",
-          title3rdReview: "Patience et attention aux détails",
+          title3rdReview: "《　Patience et attention aux détails　》",
           name3rdReview: "Alexandre Consultante de Exalt",
           message3rdReview:
             "La patience et l'attention aux détails d'Emma sont remarquables. Elle examine méticuleusement chaque aspect de son travail, garantissant des résultats de la plus haute qualité.",
