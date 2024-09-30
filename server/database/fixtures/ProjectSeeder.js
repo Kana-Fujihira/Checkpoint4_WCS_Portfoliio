@@ -17,7 +17,7 @@ class ProjectSeeder extends AbstractSeeder {
       {
         teamname: "Holidayplanner",
         projectname: "Find Your Holiday",
-        skill: "Figma Trello React JavaScript",
+        skill: "Figma Trello React JavaScript Express Node",
         projectlink: `https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P2-holidays_planner`,
       },
       {
@@ -28,8 +28,9 @@ class ProjectSeeder extends AbstractSeeder {
       },
       {
         teamname: "Ricetrio",
-        projectname: "Prodkat",
-        skill: "Figma Trello React Mysql",
+        projectname: "Broadkat",
+        skill:
+          "Figma Trello HTML CSS JavaScript React Express Node Mysql JWT Argon2",
         projectlink: `https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P3-Ricetrio`,
       },
     ];
