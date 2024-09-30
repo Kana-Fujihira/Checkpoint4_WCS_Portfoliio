@@ -1,0 +1,48 @@
+.workExperienceTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workContainer {
+  display: flex;
+  outline: solid;
+  margin: 1rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.workContainer img {
+  width: 10%;
+}
+
+.workContainer p {
+  margin: 1rem;
+}
+
+.companyName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.maker {
+  background: linear-gradient(transparent 50%, rgba(255, 153, 0, 0.5) 50%);
+  display: inline;
+}
+
+@media only screen and (min-width: 480px) {
+  .workContainer {
+    border-radius: 10px;
+  }
+  .workContainer {
+    flex-direction: row;
+  }
+  .workContainer img {
+    width: 5%;
+  }
+}

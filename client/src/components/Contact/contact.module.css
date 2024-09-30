@@ -1,0 +1,37 @@
+.contactTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contactContainer input {
+  margin: 1rem;
+}
+
+.contactContainer button {
+  font-family: var(--main-font);
+  margin: 1rem;
+}
+
+.maker {
+  background: linear-gradient(transparent 50%, rgba(255, 153, 0, 0.5) 50%);
+  display: inline;
+}
+
+@media only screen and (min-width: 480px) {
+  .contactContainer {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,41 @@
+.footerContainer {
+  display: flex;
+  margin: 2rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgAdminWoman {
+  width: 8vw;
+}
+
+.imgLinkedIn {
+  width: 8vw;
+}
+
+.imgCV {
+  width: 8vw;
+}
+.imgGithub {
+  width: 8vw;
+}
+
+@media only screen and (min-width: 480px) {
+  .imgAdminWoman {
+    width: 4vw;
+  }
+
+  .imgLinkedIn {
+    width: 4vw;
+  }
+
+  .imgCV {
+    width: 4vw;
+  }
+  .imgGithub {
+    width: 4vw;
+  }
+}

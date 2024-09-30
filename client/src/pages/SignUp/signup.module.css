@@ -1,0 +1,29 @@
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.signupContainer input {
+  margin: 1rem;
+}
+
+.signupContainer button {
+  font-family: var(--main-font);
+  margin-bottom: 10%;
+}
+
+.signupContainer p {
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.homeIcon {
+  width: 5%;
+}

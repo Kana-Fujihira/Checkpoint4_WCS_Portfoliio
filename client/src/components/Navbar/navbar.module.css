@@ -1,0 +1,48 @@
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  background-color: var(--background-main-color);
+  border: solid;
+  padding: 10px;
+}
+
+.navbarContainer li {
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navbarContainer a {
+  float: left;
+  display: block;
+}
+.navbarContainer a:hover {
+  background: #ddd;
+  color: rgb(81, 81, 81);
+}
+
+.navbarContainer a {
+  text-decoration: none;
+  color: var(--text-color-main);
+}
+
+button.languageButton {
+  margin: 10px;
+  font-family: var(--main-font);
+  border: 1px solid var(--text-color-main);
+  border-radius: 5px;
+  color: var(--text-color-main);
+  font-family: var(--main-font);
+}
+
+button.languageButton:hover {
+  background-color: rgb(204, 199, 199);
+}

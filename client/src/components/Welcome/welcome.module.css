@@ -1,0 +1,19 @@
+.welcomContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomContainer img {
+  margin-top: 2rem;
+  width: 40%;
+}
+
+@media only screen and (min-width: 480px) {
+  .welcomContainer img {
+    width: 25%;
+  }
+}
