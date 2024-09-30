@@ -11,7 +11,7 @@ function WorkExperience() {
   return (
     <div>
       <div className={styles.workExperienceTitle}>
-        <h2 className={styles.maker}>{t("WorkExperience")}</h2>
+        <h1 className={styles.maker}>{t("WorkExperience")}</h1>
       </div>
       <section className={styles.workContainer}>
         <img src={Cheese} alt="Cheese icon" />
