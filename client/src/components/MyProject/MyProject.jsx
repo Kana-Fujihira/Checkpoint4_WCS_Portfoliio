@@ -12,7 +12,7 @@ import styles from "./myproject.module.css";
 function MyProject() {
   const { t } = useTranslation();
   const allProjects = useLoaderData();
-  console.info(allProjects);
+ 
   return (
     <div>
       <div className={styles.myProjectTitle}>
