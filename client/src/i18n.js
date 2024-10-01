@@ -80,7 +80,7 @@ i18next
           title1stReview: "《　Organisation et créativité　》",
           name1stReview: "Shino de Account Manager de Beacon Communication",
           message1stReview:
-            "L'organisation et la créativité de Sarah sont exceptionnelles. Elle propose constamment des solutions innovantes tout en maintenant les projets bien structurés et dans les délais.",
+            "L'organisation et la créativité de Kana sont exceptionnelles. Elle propose constamment des solutions innovantes tout en maintenant les projets bien structurés et dans les délais.",
           title2ndReview: "《　Communication et esprit d'équipe　》",
           name2ndReview: "Takuma CEO de WAKAZE FRANCE",
           message2ndReview:
@@ -88,7 +88,7 @@ i18next
           title3rdReview: "《　Patience et attention aux détails　》",
           name3rdReview: "Alexandre Consultante de Exalt",
           message3rdReview:
-            "La patience et l'attention aux détails d'Emma sont remarquables. Elle examine méticuleusement chaque aspect de son travail, garantissant des résultats de la plus haute qualité.",
+            "La patience et l'attention aux détails de Kana sont remarquables. Elle examine méticuleusement chaque aspect de son travail, garantissant des résultats de la plus haute qualité.",
           Name: "Nom et prènom",
           Email: "Adresse e-mail",
           PhoneNumber: "Numéro de téléphone",
