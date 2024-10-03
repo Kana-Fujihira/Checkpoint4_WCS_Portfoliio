@@ -11,15 +11,6 @@ import Admin from "./pages/Admin/Admin";
 import Validation from "./pages/Validation/Validation";
 import "./i18n";
 
-const fetchProject = async () => {
-  const response = await fetch(`${import.meta.env.VITE_API_URL}/api/project`);
-  if (response.status !== 200) {
-    throw new Error("Failed to fetch projects");
-  }
-  const data = await response.json();
-  return data;
-};
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,7 +19,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: fetchProject,
+
       },
       {
         path: "/signin",
@@ -41,7 +32,7 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <Admin />,
-        loader: fetchProject,
+       
       },
       {
         path: "/validation",

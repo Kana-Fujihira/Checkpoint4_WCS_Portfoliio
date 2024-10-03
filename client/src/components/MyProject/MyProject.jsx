@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useLoaderData } from "react-router-dom";
+import PropTypes from "prop-types";
 import React from "../../assets/images/react.png";
 import Css from "../../assets/images/css.png";
 import Html from "../../assets/images/html.png";
@@ -9,10 +9,9 @@ import Express from "../../assets/images/express.svg";
 import Mysql from "../../assets/images/mysql.png";
 import styles from "./myproject.module.css";
 
-function MyProject() {
+function MyProject({ projects }) {
   const { t } = useTranslation();
-  const allProjects = useLoaderData();
- 
+
   return (
     <div>
       <div className={styles.myProjectTitle}>
@@ -24,10 +23,10 @@ function MyProject() {
         <img src={Css} alt="CssLogo" />
         <img src={JavaScript} alt="JavaScriptLogo" />
         <img src={Node} className={styles.toobigImage} alt="NodeLogo" />
-        <img src={Express} className={styles.toobigImage} alt="ExpressLogo" /> 
+        <img src={Express} className={styles.toobigImage} alt="ExpressLogo" />
         <img src={Mysql} alt="MysqlLogo" />
       </div>
-      {allProjects.map((project) => (
+      {projects.map((project) => (
         <div key={project.id} className={styles.projectContainer}>
           <p>
             {t("MyTeam")} {project.teamname}
@@ -46,3 +45,15 @@ function MyProject() {
 }
 
 export default MyProject;
+
+MyProject.propTypes = {
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      teamname: PropTypes.string.isRequired,
+      projectname: PropTypes.string.isRequired,
+      skill: PropTypes.string.isRequired,
+      projectlink: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
