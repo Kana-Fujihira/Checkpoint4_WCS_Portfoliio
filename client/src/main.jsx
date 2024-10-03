@@ -19,7 +19,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-
       },
       {
         path: "/signin",
@@ -32,7 +31,6 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <Admin />,
-       
       },
       {
         path: "/validation",

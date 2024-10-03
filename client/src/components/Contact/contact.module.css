@@ -11,18 +11,14 @@
   align-content: center;
   justify-content: center;
   align-items: center;
+}
+
+.contactSubContainer {
   border: solid;
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
-}
-
-.contactContainer input {
-  margin: 1rem;
-}
-
-.contactContainer button {
-  font-family: var(--main-font);
+  padding: 1rem;
   margin: 1rem;
 }
 

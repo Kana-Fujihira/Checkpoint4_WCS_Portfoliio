@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import PropTypes from "prop-types";
 import React from "../../assets/images/react.png";
 import Css from "../../assets/images/css.png";
 import Html from "../../assets/images/html.png";
@@ -9,8 +8,35 @@ import Express from "../../assets/images/express.svg";
 import Mysql from "../../assets/images/mysql.png";
 import styles from "./myproject.module.css";
 
-function MyProject({ projects }) {
+function MyProject() {
   const { t } = useTranslation();
+
+  const projects = [
+    {
+      id: 1,
+      name: "Le Kaleine Quizz",
+      skill: "HTML, CSS, JavaScript",
+      link: "https://github.com/wilderLPM/P1lesEwoks",
+    },
+    {
+      id: 2,
+      name: "Find Your Holidays",
+      skill: "HTML, CSS , JavaScript , React",
+      link: "https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P2-holidays_planner",
+    },
+    {
+      id: 3,
+      name: "Broadkat",
+      skill: "HTML, CSS, JavaScript , React, Node.js, Express, MySQL",
+      link: "https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P3-ricetrio",
+    },
+    {
+      id: 4,
+      name: "Catinder",
+      skill: "HTML, CSS, JavaScript , React, Node.js, Express, MySQL",
+      link: "https://github.com/Kana-Fujihira/matching-react-app",
+    },
+  ];
 
   return (
     <div>
@@ -29,15 +55,12 @@ function MyProject({ projects }) {
       {projects.map((project) => (
         <div key={project.id} className={styles.projectContainer}>
           <p>
-            {t("MyTeam")} {project.teamname}
-          </p>
-          <p>
-            {t("ProjectName")} : {project.projectname}
+            {t("ProjectName")} : {project.name}
           </p>
           <p>
             {t("Skill")} {project.skill}
           </p>
-          <a href={project.projectlink}>Github Link</a>
+          <a href={project.link}>Github Link</a>
         </div>
       ))}
     </div>
@@ -45,15 +68,3 @@ function MyProject({ projects }) {
 }
 
 export default MyProject;
-
-MyProject.propTypes = {
-  projects: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      teamname: PropTypes.string.isRequired,
-      projectname: PropTypes.string.isRequired,
-      skill: PropTypes.string.isRequired,
-      projectlink: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};

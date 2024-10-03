@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Welcome from "../../components/Welcome/Welcome";
 import WorkExperience from "../../components/WorkExperience/WorkExperience";
@@ -8,27 +7,6 @@ import Contactform from "../../components/Contact/Contactform";
 import Footer from "../../components/Footer/Footer";
 
 function Home() {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/project`
-        );
-        if (response.status !== 200) {
-          throw new Error("Failed to fetch projects");
-        }
-        const data = await response.json();
-        setProjects(data);
-      } catch {
-        console.error("Failed");
-      }
-    };
-
-    fetchProjects();
-  }, []);
-
   return (
     <div>
       <Navbar />
@@ -39,7 +17,7 @@ function Home() {
         <WorkExperience />
       </section>
       <section id="myProject">
-        <MyProject projects={projects} />
+        <MyProject />
       </section>
       <section id="Recommendation">
         <Recommendation />

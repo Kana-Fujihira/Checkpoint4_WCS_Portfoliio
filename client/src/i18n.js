@@ -29,8 +29,8 @@ i18next
             " ▶2021-2023 @Paris/Lyon" +
             "▶Account Manager" +
             "▶Managing BtB French/European account at French-Japanese Sake StartUp",
-          MyTeam: "My team",
           ProjectName: "Project Name",
+          ProjectDescription: "Project Description",
           Skill: "Technologies used ",
           titleReview: "Reviews from previous colleagues ",
           title1stReview: "《　Organised and creativity　》",
@@ -73,8 +73,8 @@ i18next
             " ▶2021-2023 @Paris/Lyon" +
             "▶Responsable grands comptes" +
             "▶Gestion du compte BtB français/européen de l'entreprise franco-japonaise Sake StartUp",
-          MyTeam: "Nom de équipe",
           ProjectName: "Nom de projet",
+          ProjectDescription: "Description de projet",
           Skill: "Technologies utilisées ",
           titleReview: "Témoignages de collègues précédents",
           title1stReview: "《　Organisation et créativité　》",
@@ -89,12 +89,8 @@ i18next
           name3rdReview: "Alexandre Consultante de Exalt",
           message3rdReview:
             "La patience et l'attention aux détails de Kana sont remarquables. Elle examine méticuleusement chaque aspect de son travail, garantissant des résultats de la plus haute qualité.",
-          Name: "Nom et prènom",
           Email: "Adresse e-mail",
           PhoneNumber: "Numéro de téléphone",
-          CompanyName: "Nom de l'entreprise",
-          YourMessage: "Votre message",
-          Send: "Envoyer",
         },
       },
     },
