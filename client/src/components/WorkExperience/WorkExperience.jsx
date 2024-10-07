@@ -16,15 +16,27 @@ function WorkExperience() {
       <section className={styles.workContainer}>
         <img src={Cheese} alt="Cheese icon" />
         <p className={styles.companyName}>OrderCheeese</p>
-        <p>{t("OrderCheese")}</p>
+        <ul>
+          <li>{t("OrderCheese")}</li>
+          <li>{t("OrderCheeseJob")}</li>
+          <li>{t("OrderCheeseDetail")}</li>
+        </ul>
 
         <img src={Tv} alt="Tv icon" />
         <p className={styles.companyName}>Publicis Beacon Communication</p>
-        <p>{t("Beacon")}</p>
+        <ul>
+          <li>{t("Beacon")}</li>
+          <li>{t("BeaconJob")}</li>
+          <li>{t("BeaconDetail")}</li>
+        </ul>
 
         <img src={Sake} alt="Sake icon" />
         <p className={styles.companyName}>WAKAZE FRANCE</p>
-        <p>{t("WAKAZE")}</p>
+        <ul>
+          <li>{t("WAKAZE")}</li>
+          <li>{t("WAKAZEJob")}</li>
+          <li>{t("WAKAZEDetail")}</li>
+        </ul>
       </section>
     </div>
   );

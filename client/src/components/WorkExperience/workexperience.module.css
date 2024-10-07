@@ -19,6 +19,7 @@
 
 .workContainer > p {
   font-size: 20px;
+  margin: 1rem;
 }
 
 .workContainer img {
@@ -26,8 +27,8 @@
   margin: 1rem;
 }
 
-.workContainer p {
-  margin: 1rem;
+.workContainer li {
+  list-style: url("../../assets/images/arrow.png");
 }
 
 .companyName {

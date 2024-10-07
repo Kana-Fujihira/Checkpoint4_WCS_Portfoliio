@@ -17,18 +17,18 @@ i18next
           Reccomendation: "Reccomendation",
           Contact: "Contact",
           greeting: "Hello, I am Kana. Welcome to my portfolio !",
-          OrderCheese:
-            " ▶2017-2018 Tokyo" +
-            "▶Account Executive" +
-            "▶Selling european products for Japanese BtoB restauurant market.",
-          Beacon:
-            " ▶2018-2019 @Tokyo" +
-            "▶Account Executive" +
-            "▶Assisted Philip Morris and P&G with ad and communication campaigns",
-          WAKAZE:
-            " ▶2021-2023 @Paris/Lyon" +
-            "▶Account Manager" +
-            "▶Managing BtB French/European account at French-Japanese Sake StartUp",
+          OrderCheese: " 2017-2018 Tokyo",
+          OrderCheeseHJob: "Account Executive",
+          OrderCheeseDetail:
+            "Selling european products for Japanese BtoB restauurant market.",
+          Beacon: " 2018-2019 @Tokyo",
+          BeaconJob: "Account Executive",
+          BeaconDetail:
+            "Assisted Philip Morris and P&G with ad and communication campaigns",
+          WAKAZE: " 2021-2023 @Paris/Lyon",
+          WAKAZEJob: "Account Manager",
+          WAKAZEDetail:
+            "Managing BtB French/European account at French-Japanese Sake StartUp",
           ProjectName: "Project Name",
           ProjectDescription: "Project Description",
           Skill: "Technologies used ",
@@ -61,18 +61,18 @@ i18next
           Reccomendation: "Recommandation",
           Contact: "Contactez moi",
           greeting: "Bonjour, Je suis Kana. Bienvenue sur mon site !",
-          OrderCheese:
-            " ▶2017-2018 Tokyo" +
-            "▶Responsabe de client" +
-            "▶Géré fournisseurs européens de fromages/spiritueux pour le marché japonais.",
-          Beacon:
-            " ▶2018-2019 @Tokyo" +
-            "▶Responsabe de client" +
-            "▶Géré campagnes pub pour grands clients comme Philip Morris et P&G. ",
-          WAKAZE:
-            " ▶2021-2023 @Paris/Lyon" +
-            "▶Responsable grands comptes" +
-            "▶Gestion du compte BtB français/européen de l'entreprise franco-japonaise Sake StartUp",
+          OrderCheese: " 2017-2018 Tokyo",
+          OrderCheeseJob: "Responsabe de client",
+          OrderCheeseDetail:
+            "Géré fournisseurs européens de fromages/spiritueux pour le marché japonais.",
+          Beacon: " 2018-2019 @Tokyo",
+          BeaconJob: "Responsabe de client",
+          BeaconDetal:
+            "Géré campagnes pub pour grands clients comme Philip Morris et P&G. ",
+          WAKAZE: " 2021-2023 @Paris/Lyon",
+          WAKAZEJob: "Responsable grands comptes",
+          WAKAZEDetail:
+            "Gestion du compte BtB français/européen de l'entreprise franco-japonaise Sake StartUp",
           ProjectName: "Nom de projet",
           ProjectDescription: "Description de projet",
           Skill: "Technologies utilisées ",
