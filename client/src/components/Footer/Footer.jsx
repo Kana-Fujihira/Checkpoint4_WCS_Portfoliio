@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styles from "./footer.module.css";
-import Admin from "../../assets/images/admin.svg";
+// import Admin from "../../assets/images/admin.svg";
 import Github from "../../assets/images/github-mark.svg";
 import LinkedIn from "../../assets/images/linkedin.svg";
 import CV from "../../assets/images/cv.svg";
@@ -8,11 +8,11 @@ import CV from "../../assets/images/cv.svg";
 function Footer() {
   return (
     <div className={styles.footerContainer}>
-      <section>
+      {/* <section>
         <Link to="/signup">
           <img className={styles.imgAdminWoman} src={Admin} alt="Admin icon" />
         </Link>
-      </section>
+      </section> */}
       <section>
         <a href="https://www.linkedin.com/in/kana-pedrinis-b3174013b/">
           <img

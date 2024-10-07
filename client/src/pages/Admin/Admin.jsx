@@ -1,13 +1,13 @@
-import AddProject from "./AddProject";
-import DeleteProject from "./DeleteProject";
+// import AddProject from "./AddProject";
+// import DeleteProject from "./DeleteProject";
 
-function Admin() {
-  return (
-    <div>
-      <AddProject />
-      <DeleteProject />
-    </div>
-  );
-}
+// function Admin() {
+//   return (
+//     <div>
+//       <AddProject />
+//       <DeleteProject />
+//     </div>
+//   );
+// }
 
-export default Admin;
+// export default Admin;

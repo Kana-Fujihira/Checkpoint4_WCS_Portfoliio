@@ -6,6 +6,8 @@ import JavaScript from "../../assets/images/javascript.png";
 import Node from "../../assets/images/node.svg";
 import Express from "../../assets/images/express.svg";
 import Mysql from "../../assets/images/mysql.png";
+import Catinder from "../../assets/video/Catinder - Made with Clipchamp.mp4";
+import BroadkatVideo from "../../assets/video/Broadkat - Made with Clipchamp.mp4";
 import styles from "./myproject.module.css";
 
 function MyProject() {
@@ -24,17 +26,18 @@ function MyProject() {
       skill: "HTML, CSS , JavaScript , React",
       link: "https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P2-holidays_planner",
     },
+
     {
       id: 3,
-      name: "Broadkat",
-      skill: "HTML, CSS, JavaScript , React, Node.js, Express, MySQL",
-      link: "https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P3-ricetrio",
-    },
-    {
-      id: 4,
       name: "Catinder",
       skill: "HTML, CSS, JavaScript , React, Node.js, Express, MySQL",
       link: "https://github.com/Kana-Fujihira/matching-react-app",
+    },
+    {
+      id: 4,
+      name: "Broadkat",
+      skill: "HTML, CSS, JavaScript , React, Node.js, Express, MySQL",
+      link: "https://github.com/WildCodeSchool-2024-02/JS-lyon-0224-P3-ricetrio",
     },
   ];
 
@@ -63,6 +66,16 @@ function MyProject() {
           <a href={project.link}>Github Link</a>
         </div>
       ))}
+      <div className={styles.videoContainer}>
+        <video width="600" controls className={styles.videoContent}>
+          <source src={Catinder} type="video/mp4" />
+          <track kind="captions" />
+        </video>
+        <video width="600" controls className={styles.videoContent}>
+          <source src={BroadkatVideo} type="video/mp4" />
+          <track kind="captions" />
+        </video>
+      </div>
     </div>
   );
 }
