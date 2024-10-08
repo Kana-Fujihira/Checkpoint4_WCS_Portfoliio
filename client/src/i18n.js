@@ -36,15 +36,15 @@ i18next
           title1stReview: "《 Organised and creativity 》",
           name1stReview: "Shino Account Manager from Beacon Communication",
           message1stReview:
-            "Kana's organizational skills and creativity are outstanding. She consistently delivers innovative solutions while keeping projects well-structured and on track.",
+            '"Kana\'s organizational skills and creativity are outstanding. She consistently delivers innovative solutions while keeping projects well-structured and on track."',
           title2ndReview: "《 Communication and team spirit 》",
           name2ndReview: "Takuma CEO from WAKAZE FRANCE",
           message2ndReview:
-            "Kana excels in communication and fosters a strong team spirit. Her ability to collaborate effectively and motivate others is truly impressive.",
+            '"Kana excels in communication and fosters a strong team spirit. Her ability to collaborate effectively and motivate others is truly impressive."',
           title3rdReview: "《 Organised and creativity 》",
           name3rdReview: "Alexandre IT Consultant from Exalt",
           message3rdReview:
-            "Kana's patience and attention to detail are remarkable. She meticulously reviews every aspect of her work, ensuring the highest quality output.",
+            '"Kana\'s patience and attention to detail are remarkable. She meticulously reviews every aspect of her work, ensuring the highest quality output."',
           Name: "Name",
           Email: "Email",
           PhoneNumber: "Phone Number",
@@ -64,15 +64,15 @@ i18next
           OrderCheese: "2017-2018 Tokyo",
           OrderCheeseJob: "Responsable de client",
           OrderCheeseDetail:
-            "Géré fournisseurs européens de fromages/spiritueux pour le marché japonais.",
+            "Gestion des fournisseurs européens de fromages/spiritueux pour le marché japonais.",
           Beacon: "2018-2019 @Tokyo",
           BeaconJob: "Responsable de client",
           BeaconDetail:
-            "Géré campagnes pub pour grands clients comme Philip Morris et P&G.",
+            "Gestion des campagnes pub pour grands clients comme Philip Morris et P&G.",
           WAKAZE: "2021-2023 @Paris/Lyon",
-          WAKAZEJob: "Responsable grands comptes",
+          WAKAZEJob: "Responsable de grands comptes",
           WAKAZEDetail:
-            "Gestion des comptes BtB français/européens de l'entreprise franco-japonaise Sake Startup.",
+            "Gestion des comptes BtoB français/européens de l'entreprise franco-japonaise Sake Startup.",
           ProjectName: "Nom de projet",
           ProjectDescription: "Description de projet",
           Skill: "Technologies utilisées",
@@ -80,15 +80,15 @@ i18next
           title1stReview: "《 Organisation et créativité 》",
           name1stReview: "Shino de Account Manager de Beacon Communication",
           message1stReview:
-            "L'organisation et la créativité de Kana sont exceptionnelles. Elle propose constamment des solutions innovantes tout en maintenant les projets bien structurés et dans les délais.",
+            '"L\'organisation et la créativité de Kana sont exceptionnelles. Elle propose constamment des solutions innovantes tout en maintenant les projets bien structurés et dans les délais."',
           title2ndReview: "《 Communication et esprit d'équipe 》",
           name2ndReview: "Takuma CEO de WAKAZE FRANCE",
           message2ndReview:
-            "Kana excelle en communication et favorise un fort esprit d'équipe. Sa capacité à collaborer efficacement et à motiver les autres est vraiment impressionnante.",
+            '"Kana excelle en communication et favorise un fort esprit d\'équipe. Sa capacité à collaborer efficacement et à motiver les autres est vraiment impressionnante."',
           title3rdReview: "《 Patience et attention aux détails 》",
           name3rdReview: "Alexandre Consultant de Exalt",
           message3rdReview:
-            "La patience et l'attention aux détails de Kana sont remarquables. Elle examine méticuleusement chaque aspect de son travail, garantissant des résultats de la plus haute qualité.",
+            '"La patience et l\'attention aux détails de Kana sont remarquables. Elle examine méticuleusement chaque aspect de son travail, garantissant des résultats de la plus haute qualité."',
           Email: "Adresse e-mail",
           PhoneNumber: "Numéro de téléphone",
         },
