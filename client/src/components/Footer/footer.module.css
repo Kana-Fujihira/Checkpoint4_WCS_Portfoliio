@@ -23,7 +23,7 @@
   width: 8vw;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 760px) {
   .imgAdminWoman {
     width: 4vw;
   }

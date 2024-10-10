@@ -30,7 +30,9 @@ function Contactform() {
       </div>
       <div className={styles.contactContainer}>
         <div className={styles.contactSubContainer}>
-          <h3>{t("Email")} : kanafujihirapedrinis@gmail.com</h3>
+          <a href="mailto:kanafujihirapedrinis@gmail.com">
+            {t("Email")} : kanafujihirapedrinis@gmail.com
+          </a>
         </div>{" "}
         <div className={styles.contactSubContainer}>
           <h3>{t("PhoneNumber")} : 0667824231 </h3>{" "}

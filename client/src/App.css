@@ -3,11 +3,6 @@
   src: url("../src/assets/font/Average-Regular.ttf") format("truetype");
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
 :root {
   --background-main-color: #f1ede6;
   --text-color-main: #2c9720;
@@ -18,4 +13,12 @@ body {
   background-color: var(--background-main-color);
   color: var(--text-color-main);
   font-family: var(--main-font);
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: block;
+  margin: 0;
+  padding: 0;
 }

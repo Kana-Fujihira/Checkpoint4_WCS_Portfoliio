@@ -24,8 +24,8 @@ function Footer() {
       </section>
       <section>
         <a
-          href="/Kana PEDRINIS CV Developpeuse full-stack en alternance.pdf"
-          download="Kana PEDRINIS CV Developpeuse full-stack en alternance.pdf"
+          href="/Kana PEDRINIS CV Conceptrice Développeuse d’Applications en alternance.pdf"
+          download="Kana PEDRINIS CV Conceptrice Développeuse d’Applications en alternance.pdf"
         >
           <img className={styles.imgCV} src={CV} alt="CV icon" />
         </a>

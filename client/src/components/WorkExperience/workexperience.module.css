@@ -41,7 +41,7 @@
   display: inline;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 760px) {
   .workContainer {
     border-radius: 10px;
   }

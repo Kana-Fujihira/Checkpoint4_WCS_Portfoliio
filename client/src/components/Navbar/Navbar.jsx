@@ -10,26 +10,28 @@ function Navbar() {
   const { t } = useTranslation();
 
   return (
-    <ul className={styles.navbarContainer}>
-      <a href="#home">
-        <li>{t("home")}</li>
-      </a>
-      <a href="#workExperience">
-        <li>{t("WorkExperience")}</li>
-      </a>
-      <a href="#myProject">
-        <li>{t("Project")}</li>
-      </a>
-      <a href="#Recommendation">
-        <li>{t("Reccomendation")}</li>
-      </a>
-      <a href="#contact">
-        <li>{t("Contact")}</li>
-      </a>
-      <li>
-        <Languageselector />
-      </li>
-    </ul>
+    <div className={styles.navbarContainer}>
+      <ul>
+        <a href="#home">
+          <li>{t("home")}</li>
+        </a>
+        <a href="#workExperience">
+          <li>{t("WorkExperience")}</li>
+        </a>
+        <a href="#myProject">
+          <li>{t("Project")}</li>
+        </a>
+        <a href="#Recommendation">
+          <li>{t("Reccomendation")}</li>
+        </a>
+        <a href="#contact">
+          <li>{t("Contact")}</li>
+        </a>
+        <li>
+          <Languageselector />
+        </li>
+      </ul>
+    </div>
   );
 }
 

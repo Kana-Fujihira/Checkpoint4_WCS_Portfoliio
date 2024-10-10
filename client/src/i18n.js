@@ -17,6 +17,8 @@ i18next
           Recommendation: "Recommendation",
           Contact: "Contact",
           greeting: "Hello, I am Kana. Welcome to my portfolio!",
+          introduction:
+            "After four years as an Account Manager in Tokyo and Lyon, I made a career change. With a Web and Mobile Developer diploma (Bac+2) from Wild Code School, I'm now seeking an apprenticeship as an Application Designer-Developer in France with Simplon, alternating 3 weeks in a company and 1 week in training.",
           OrderCheese: "2017-2018 Tokyo",
           OrderCheeseJob: "Account Executive",
           OrderCheeseDetail:
@@ -61,6 +63,8 @@ i18next
           Recommendation: "Recommandation",
           Contact: "Contactez-moi",
           greeting: "Bonjour, je suis Kana. Bienvenue sur mon site !",
+          introduction:
+            "Après quatre ans comme Account Manager à Tokyo et Lyon, j'ai entrepris une reconversion. Diplômée développeuse web et mobile (Bac+2) à la Wild Code School, je recherche une alternance de conceptrice développeuse d'applications en France chez Simplon (rythme : 3 semaines entreprise, 1 semaine formation).",
           OrderCheese: "2017-2018 Tokyo",
           OrderCheeseJob: "Responsable de client",
           OrderCheeseDetail:
