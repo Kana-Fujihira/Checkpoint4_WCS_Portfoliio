@@ -4,10 +4,6 @@ import AvatarNormal from "../../assets/images/avatar-normal.svg";
 import AvatarMouthOpen from "../../assets/images/avatar-openmouth.svg";
 import Phrase1 from "../../assets/images/phrase1.svg";
 import Phrase2 from "../../assets/images/phrase2.svg";
-// import img1 from "../../assets/images/img1.png";
-// import img2 from "../../assets/images/img2.png";
-// import img3 from "../../assets/images/img3.png";
-// import img4 from "../../assets/images/img4.png";
 
 import styles from "./welcome.module.css";
 
@@ -25,35 +21,6 @@ function Welcome() {
 
   return (
     <div>
-      {" "}
-      {/* <div>
-        <ul className={styles.rotateImage}>
-          <li>
-            <img src={img1} alt="sakura1" />
-          </li>
-          <li>
-            <img src={img2} alt="sakura2" />
-          </li>
-          <li>
-            <img src={img3} alt="sakura3" />
-          </li>
-          <li>
-            <img src={img4} alt="sakura4" />
-          </li>
-          <li>
-            <img src={img1} alt="sakura1" />
-          </li>
-          <li>
-            <img src={img2} alt="sakura2" />
-          </li>
-          <li>
-            <img src={img3} alt="sakura3" />
-          </li>
-          <li>
-            <img src={img4} alt="sakura4" />
-          </li>
-        </ul>
-      </div> */}
       <div className={styles.headlineContainer}>
         <h1>{t("greeting")}</h1>
       </div>
