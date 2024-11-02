@@ -38,6 +38,29 @@
   display: inline;
 }
 
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.contactFormButton {
+  margin: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+
+  font-family: var(--main-font);
+}
+
 @media only screen and (min-width: 760px) {
   .contactContainer {
     flex-direction: row;

@@ -3,6 +3,7 @@ import React from "../../assets/images/react.png";
 import Css from "../../assets/images/css.png";
 import Html from "../../assets/images/html.png";
 import JavaScript from "../../assets/images/javascript.png";
+import Swift from "../../assets/images/swift.svg";
 import Node from "../../assets/images/node.svg";
 import Express from "../../assets/images/express.svg";
 import Mysql from "../../assets/images/mysql.png";
@@ -54,6 +55,7 @@ function MyProject() {
         <img src={Node} className={styles.toobigImage} alt="NodeLogo" />
         <img src={Express} className={styles.toobigImage} alt="ExpressLogo" />
         <img src={Mysql} alt="MysqlLogo" />
+        <img src={Swift} className={styles.toobigImage} alt="SwiftLogo" />
       </div>
       {projects.map((project) => (
         <div key={project.id} className={styles.projectContainer}>

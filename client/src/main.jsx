@@ -8,7 +8,7 @@ import Home from "./pages/Home/Home";
 // import SignIn from "./pages/SignIn/SignIn";
 // import SignUp from "./pages/SignUp/SignUp";
 // import Admin from "./pages/Admin/Admin";
-// import Validation from "./pages/Validation/Validation";
+import Validation from "./pages/Validation/Validation";
 import "./i18n";
 
 const router = createBrowserRouter([
@@ -32,10 +32,10 @@ const router = createBrowserRouter([
       //   path: "/admin",
       //   element: <Admin />,
       // },
-      // {
-      //   path: "/validation",
-      //   element: <Validation />,
-      // },
+      {
+        path: "/validation",
+        element: <Validation />,
+      },
     ],
   },
 ]);

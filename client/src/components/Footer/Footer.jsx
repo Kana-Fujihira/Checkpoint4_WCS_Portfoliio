@@ -14,7 +14,7 @@ function Footer() {
         </Link>
       </section> */}
       <section>
-        <a href="https://www.linkedin.com/in/kana-pedrinis-b3174013b/">
+        <a href="https://www.linkedin.com/in/kana-fujihira-b3174013b/">
           <img
             className={styles.imgLinkedIn}
             src={LinkedIn}
@@ -24,8 +24,8 @@ function Footer() {
       </section>
       <section>
         <a
-          href="/Kana PEDRINIS CV Conceptrice Développeuse d’Applications en alternance.pdf"
-          download="Kana PEDRINIS CV Conceptrice Développeuse d’Applications en alternance.pdf"
+          href="/Kana FUJIHIRA PEDRINIS CV Développeuse full stack en alternance.pdf"
+          download="Kana FUJIHIRA PEDRINIS CV Développeuse full stack en alternance.pdf"
         >
           <img className={styles.imgCV} src={CV} alt="CV icon" />
         </a>
