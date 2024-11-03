@@ -15,6 +15,14 @@
   margin: 1rem;
 }
 
+.projectContainer > h2 {
+  margin: 20px;
+}
+
+.projectContainer > a {
+  margin: 20px;
+}
+
 .myProjectTitle {
   display: flex;
   justify-content: center;
@@ -51,6 +59,25 @@
 
 .videoContent {
   padding: 2rem;
+}
+
+.broadkatLogo {
+  width: 200px;
+  margin: 20px;
+}
+
+.holidaysPlannerLogo {
+  width: 120px;
+  margin: 20px;
+}
+
+.kaleineLogo {
+  width: 125px;
+  margin: 20px;
+}
+
+.skills {
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 760px) {

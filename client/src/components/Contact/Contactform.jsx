@@ -87,8 +87,6 @@ function Contactform() {
         </div>
       </div>
       <Form method="post" onSubmit={formSubmit}>
-        <h2 className={styles.contactTitle}>{t("Contact")}</h2>
-        
         <div className={styles.contactFormContainer}>
           <label htmlFor="name">{t("Name")}</label>
           <input

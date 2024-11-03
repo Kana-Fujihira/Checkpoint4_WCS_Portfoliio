@@ -32,7 +32,12 @@ i18next
           WAKAZEDetail:
             "Managing BtB French/European accounts at a French-Japanese Sake Startup.",
           ProjectName: "Project Name",
-          ProjectDescription: "Project Description",
+          Broadkat:
+            "Development of a video streaming platform, combining frontend and backend expertise and backend expertise, integrating advanced database database management.",
+          HolidaysPlanner:
+            "Development of a React application to search and obtain results for public holidays in 90 countries using the Nager.date API.",
+          KaleineQuizz: "Creating a quiz using the Model Object Document",
+          ProjectDetails: "Details",
           Skill: "Technologies used",
           titleReview: "Reviews from previous colleagues",
           title1stReview: "《 Organised and creativity 》",
@@ -61,6 +66,11 @@ i18next
           home: "Accueil",
           WorkExperience: "Expérience professionnelle",
           Project: "Mes Projets",
+          Broadkat:
+            "Développement d'une plateforme de streaming vidéo, alliant expertise frontend et backend, intégrant une gestion avancée des bases de données.",
+          HolidaysPlanner:
+            "Développement d'une application React permettant de rechercher et d'obtenir les résultats des jours fériés de 90 pays en utilisant l'API Nager.date",
+          KaleineQuizz: "Création d'un quiz utilisant le Document Objet Modèle",
           Recommendation: "Recommandation",
           Contact: "Contactez-moi",
           greeting: "Bonjour, je suis Kana. Bienvenue sur mon site !",
