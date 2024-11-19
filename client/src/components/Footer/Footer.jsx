@@ -24,8 +24,8 @@ function Footer() {
       </section>
       <section>
         <a
-          href="/Kana FUJIHIRA PEDRINIS CV Développeuse full stack en alternance.pdf"
-          download="Kana FUJIHIRA PEDRINIS CV Développeuse full stack en alternance.pdf"
+          href="client/src/assets/cv/Kana_FUJIHIRA_CV_Développeur_full-stack.pdf"
+          download="Kana_FUJIHIRA_CV_Développeur_full-stack.pdf"
         >
           <img className={styles.imgCV} src={CV} alt="CV icon" />
         </a>

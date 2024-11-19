@@ -25,6 +25,12 @@ i18next
             "Selling European products for Japanese BtoB restaurant market.",
           Beacon: "2018-2019 @Tokyo",
           BeaconJob: "Account Executive",
+          JobDetails: "Details",
+          JobResults: "Results",
+          JObSkills: "Skills",
+          BeaconJobResult: "",
+          BeaconJobDetails: "",
+          BeaconCompetence: "",
           BeaconDetail:
             "Assisted Philip Morris and P&G with ad and communication campaigns.",
           WAKAZE: "2021-2023 @Paris/Lyon",
